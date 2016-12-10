@@ -9,10 +9,10 @@
         *{margin:0; padding:0;}
         ul{list-style:none;}
 
-        .slide{border:1px #F00 solid; width:600px; height:300px; margin:0 auto; position:relative;}
-        .slide button{position:absolute; top:50%;width:30px; height:40px;}
-        .slide button.prev{left:-50px;}
-        .slide button.next{right:-50px;}
+        .slide{border:1px #F00 solid; width:100%; height:300px; margin:0 auto; position:relative;}
+        .slide button{position:absolute; top:30%;width:30px; height:40px;}
+        .slide button.prev{left:50px; z-index:1;}
+        .slide button.next{right:50px; z-index:1;}
         .slide .view{text-align:center; position:relative;  height:300px; overflow:hidden;}
         .slide li {display:inline-block;}
         .slide li.on a{background-color: #F00;}
@@ -106,8 +106,8 @@
 
     <div class="slide">
         <div class="btngroup">
-                <button class="next">다음</button>
-                <button class="prev">이전</button>
+                <button class="next"> > </button>
+                <button class="prev"> < </button>
         </div>
 
         <div class="view">
