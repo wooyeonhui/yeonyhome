@@ -8,23 +8,96 @@
 </head>
 <body id="target">
   <header>
-   <h1><a href="http://accidentlywoo.dothome.co.kr">Woo.Zoo</a></h1>
-   <span>since.2017.jan</span>
   </header>
   <nav>
     <ul>
-
+       <li>HOME</li>
+       <li>BIO</li>
+       <!-- 짧은 경력 -->
+       <li>PORTFOLIO</li>
+       <li>CONTACT</li>
+       <li><a href="#none">Join</a></li>
     </ul>
   </nav>
-  <div id="control">
-         <input type="button" value="white" onclick="document.getElementById('target').className='white'">
-         <input type="button" value="black" onclick="document.getElementById('target').className='black'">
-  </div>
+    <div id="style-control">
+          <input type="button" value="white" onclick="document.getElementById('target').className='white'">
+          <input type="button" value="black" onclick="document.getElementById('target').className='black'">
+    </div>
   <article>
+    <div class="section1">
+      <h2><a href="http://accidentlywoo.dothome.co.kr">Accidently Woo</a></h2>
+      <p>Awesome Human</p>
+      <div class="section-bg-layer section-bg-bgi">
+        <!-- 고화질 이미지를 쥰비하자.. -->
+      </div>
+     <div class="section-bg-layer section-bg-overlay">
+       <!-- 음.. 나름대로의 일러스트를 준비하자.. -->
+     </div>
+   </div>
 
+   <div class="section2">
+     <div class="section2-aboutme">
+       <h2>ABOUT ME</h2>
+       <span>뭐라뭐라쓰겟지 간지나게</span>
+     </div>
+     <div class="section2-personal">
+        <table>
+          <tr>
+            <td>Name</td>
+            <td>Accidently Woo</td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>woo__yeon_@naver.com</td>
+          </tr>
+          <tr>
+            <td>Date of birth</td>
+            <td>march-12-1993</td>
+          </tr>
+        </table>
+     </div>
+     <div class="section2-image">
+        <!-- 오른쪽에 옆모습 -->
+     </div>
+   </div>
+
+   <div class="section3">
+     <!-- 멋진말 넣기 -->
+     JUST DO IT
+   </div>
+
+   <div class="section4">
+    <h2>skills</h2>
+     <ul>
+       <li>PhoShop</li>
+       <li>Illustrator</li>
+       <li>HTML</li>
+       <li>CSS</li>
+       <li>JavaScript</li>
+       <li>Java</li>
+     </ul>
+   </div>
+
+   <div class="section5">
+      <div class="section5-left section5-text">
+         <h2>PORTFOLIO</h2><br/>
+         <span>포트폴리오 썸네일입니다. 썸네일 이미지를 클릭하면 해당 포트폴리오로 이동합니다.</span>
+      </div>
+      <div class="section5-right section5-images"></div>
+   </div>
+
+   <div class="portfolio"></div>
   </article>
   <footer>
-
+    <div><span>ⓒ 2017 Accidently Woo I ALL rights reserved</span>
+      <br/><span>Powered by KMC & BHS</span>
+    </div>
   </footer>
+  <!-- 바디 전체 구상(feat. http://cms.woo-zoo.webnode.kr/)
+      - 오른쪽 상단 네비 픽스드 애니메이션
+      1. 첫화면 전체 와타시큰사진 + 이름(간단한 닉네임)
+      2. ABOOT ME
+
+ -->
 </body>
 </html>
