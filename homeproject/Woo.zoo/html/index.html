@@ -13,9 +13,7 @@
   </header>
   <nav>
     <ul>
-    <?php
-        echo file_get_contents('text/list.txt');
-     ?>
+
     </ul>
   </nav>
   <div id="control">
@@ -23,11 +21,7 @@
          <input type="button" value="black" onclick="document.getElementById('target').className='black'">
   </div>
   <article>
-<?php
- if( empty($_GET['id']) == false ){
-   echo file_get_contents($_GET['id'].".txt")
- }
- ?>
+
   </article>
   <footer>
 
