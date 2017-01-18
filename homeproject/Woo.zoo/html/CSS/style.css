@@ -1,0 +1,86 @@
+*{margin : 0; padding :0;  }
+nav {position: fixed; right:80px; top:50px;
+     display: block;
+     outline: 1px solid powderblue;}
+nav ul{list-style: none; display:inline-block;}
+nav ul li{margin: 10px 20px; display:inline-block; }
+nav ul li a{text-decoration: none; color:black;}
+/*podition-fixed nav*/
+article div[class^="section"]{display:block; outline: 1px solid #ccc}
+/*'section'들어간 class 모두 선택*/
+/*section 1 */
+article .section1{margin:0 0; padding-top: 100px; outline: 1px solid tomato;
+                  width:100%; height:700px; overflow: hidden;}
+article .section1 .section1-log{margin:150px 100px; text-align: center;
+                                width: 200px; height:100px;}
+article .section1 .section1-log h2 a{text-decoration: none;
+                                     color:black; font-size: 30px}
+article .section1 .section1-log p{line-height: 20px; font-size: 14px;}
+article .section1 .section1-bg-bgi{position: absolute; top:0; z-index: -1;
+                                   outline: 1px solid tomato;
+                                   width:100%; height:825px; overflow: hidden;
+                                   background-image: url(http://i.imgur.com/gI771Mu.jpg);
+                                   background-repeat:no-repeat;-webkit-background-size:cover;}
+/*이미지 바꾸기 webkit-background-size:cover;은 반응형에서 쓰자*/
+article .section1 .section1-bg-overlay{outline: 1px solid tomato;}
+/*이미지에 오버레이할 일러스트*/
+/*section 2  About me*/
+article .section2{margin:0 0; padding-top: 20px;
+                  width:100%; height:600px; }
+article .section2 .section2-logo{margin-top:20px; margin-left:100px; text-align: center;
+                                width: 200px; height:100px;}
+article .section2 .section2-logo h2 a{text-decoration: none;line-height: 70px;
+                                     color:black; font-size: 30px}
+article .section2 .section2-personal{margin-left:100px; vertical-align: middle;
+                                     outline: 1px solid tomato;display: inline-block;
+                                     width:20%; height:380px; }
+article .section2 .section2-personal table{width:400px; height:200px;
+                                           text-align: left; line-height: 1.5;
+                                           border-left: 3px solid gray; border-top: 1px solid black;}
+article .section2 .section2-personal table td{padding-left: 20px; vertical-align:middle; border-bottom: 1px solid gray;}
+article .section2 .section2-personal table th{vertical-align:middle; border-bottom: 1px solid gray;}
+article .section2 .section2-image{float:right; display: inline-block;                                 background-color: powderblue;
+                                  width: 60%; height: 380px; }
+/*여니 이미지 2넣기*/
+/*section 3 -문구 샵입-*/
+article .section3{margin:20px 0; width:100%; height:80px;}
+article .section3 p{font-size: 30px; text-align: center;line-height:80px;}
+/* section 4 -SKILLS-*/
+article .section4{margin:0 0;
+                  width:100%; height:700px;}
+article .section4 .section4-logo{margin-left: 100px; text-align: center;
+                                width: 200px; height:100px;}
+article .section4 .section4-logo h2 a{text-decoration: none; line-height: 70px;
+                                     color:black; font-size: 30px}
+/* 3x2 grid-list */
+article .section4 .section4-skills{margin:0 auto; outline: 1px solid powderblue;
+                                    width:80%; height:600px; overflow: hidden;}
+article .section4 .section4-skills ul{list-style: none; margin-top:20px;width:100%;background-color:#ccc;}
+article .section4 .section4-skills li{display: inline-block;outline: 1px solid powderblue;
+                                      width:250px;height:250px; margin:10px; background-color:white;}
+article .section4 .section4-skills li p{display: inline-block;width:100%;background-color:gray;
+                                        color:white; font-weight: 300; text-align: center; text-shadow:2px 2px black; }
+/*section 5 포트폴리오*/
+article .section5{margin:0 0; padding-top: 20px;
+                  width:100%; height:700px;}
+article .section5 .section5-logo{margin-left:100px; text-align: center;
+                                width: 200px; height:100px; position: relative;}
+article .section5 .section5-logo h2 a{text-decoration: none;
+                                      color:black; font-size: 30px}
+article .section5 .section5-images{display: inline-block; margin-left: 50px;
+                                   width:1000px; height:600px; position:relative; left:500px;top:-40px;}
+article .section5 .section5-images ul{list-style:none; display: inline-block;}
+article .section5 .section5-images ul li{display: block;}
+article .section5 .section5-images ul li.i1
+                    {width:350px; height:200px; margin:10px 0; outline: 1px solid black;position: relative; left:0;top:0; background-color: powderblue;}
+article .section5 .section5-images ul li.i2
+                    {width: 550px; height: 300px; margin:10px 0; outline: 1px solid black;position: relative; left:0;top:-105px;}
+
+
+footer{background-color: black;}
+footer div{text-align: center;}
+footer div span{color:white;}
+/* -1.위치 (position& margin& padding& outline)
+   -2.크기&속성(width& height& inline-block..)
+   -3.색&폰트(bgc& font)
+*/
