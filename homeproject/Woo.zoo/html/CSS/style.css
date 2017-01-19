@@ -1,26 +1,32 @@
-*{margin : 0; padding :0;  }
-nav {position: fixed; right:80px; top:50px;
-     display: block;
-     outline: 1px solid powderblue;}
+*{margin : 0; padding :0; font-family:'Nanum Gothic'; }
+
+nav {position: fixed; right:80px; top:10px;z-index:1;
+     display:inline-block; background-color:rgba(0,0,0,.2)}
 nav ul{list-style: none; display:inline-block;}
-nav ul li{margin: 10px 20px; display:inline-block; }
-nav ul li a{text-decoration: none; color:black;}
+nav ul li{display:inline-block; float: left;height:100px;}
+nav ul li:hover{background-color: rgba(255,255,255,0.7);}
+nav ul li a{transition: .5s; text-decoration: none; text-align: center;
+            width:100px; height:100px;display:block;
+             font-size:16px; line-height:100px;font-weight: bold;color:black;}
+nav ul li a:hover{border-bottom:8px solid black;}
+nav ul li p{text-indent: -9999px; font-size:0;}
+nav a.menu{display: none;}
+
 /*podition-fixed nav*/
-article div[class^="section"]{display:block; outline: 1px solid #ccc}
+article div[class^="section"]{display:block;}
 /*'section'들어간 class 모두 선택*/
 /*section 1 */
-article .section1{margin:0 0; padding-top: 100px; outline: 1px solid tomato;
+article .section1{margin:0 0; padding-top: 100px;
                   width:100%; height:700px; overflow: hidden;}
 article .section1 .section1-log{margin:150px 100px; text-align: center;
-                                width: 200px; height:100px;}
-article .section1 .section1-log h2 a{text-decoration: none;
-                                     color:black; font-size: 30px}
-article .section1 .section1-log p{line-height: 20px; font-size: 14px;}
+                                width: 200px; height:100px; background-color:rgba(10,30,30,.5)}
+article .section1 .section1-log h2 a{text-decoration: none;text-shadow:1px 1px #fff;
+                                     color:black; font-size: 30px; color:#ccc;}
+article .section1 .section1-log p{line-height: 20px; font-size: 14px; font-weight: bold;}
 article .section1 .section1-bg-bgi{position: absolute; top:0; z-index: -1;
-                                   outline: 1px solid tomato;
                                    width:100%; height:825px; overflow: hidden;
                                    background-image: url(http://i.imgur.com/gI771Mu.jpg);
-                                   background-repeat:no-repeat;-webkit-background-size:cover;}
+                                   background-repeat:no-repeat;background-position:  50% 30%;}
 /*이미지 바꾸기 webkit-background-size:cover;은 반응형에서 쓰자*/
 article .section1 .section1-bg-overlay{outline: 1px solid tomato;}
 /*이미지에 오버레이할 일러스트*/
@@ -28,58 +34,78 @@ article .section1 .section1-bg-overlay{outline: 1px solid tomato;}
 article .section2{margin:0 0; padding-top: 20px;
                   width:100%; height:600px; }
 article .section2 .section2-logo{margin-top:20px; margin-left:100px; text-align: center;
-                                width: 200px; height:100px;}
-article .section2 .section2-logo h2 a{text-decoration: none;line-height: 70px;
-                                     color:black; font-size: 30px}
+                                width: 200px; height:100px;background-color:rgba(10,30,30,.5)}
+article .section2 .section2-logo h2 a{text-decoration: none;line-height: 60px;
+                                     color:#ccc;; font-size: 30px; text-shadow:1px 1px #fff;}
+article .section2 .section2-logo span{line-height: 20px; font-size: 14px; font-weight: bold;}
 article .section2 .section2-personal{margin-left:100px; vertical-align: middle;
-                                     outline: 1px solid tomato;display: inline-block;
+                                     display: inline-block;
                                      width:20%; height:380px; }
 article .section2 .section2-personal table{width:400px; height:200px;
                                            text-align: left; line-height: 1.5;
-                                           border-left: 3px solid gray; border-top: 1px solid black;}
+                                           border-left: 3px solid gray;}
 article .section2 .section2-personal table td{padding-left: 20px; vertical-align:middle; border-bottom: 1px solid gray;}
 article .section2 .section2-personal table th{vertical-align:middle; border-bottom: 1px solid gray;}
-article .section2 .section2-image{float:right; display: inline-block;                                 background-color: powderblue;
+article .section2 .section2-image{position:absolute; z-index:-1;display: inline-block;                                 background-color: powderblue;
                                   width: 60%; height: 380px; }
+article .section2 .section2-more{margin: 400px 220px 0 0;width:100px; height:60px; float:right; background-color:powderblue;text-align:center;border-top:3px solid #55d}
+article .section2 .section2-more a{text-decoration: none;font-size:20px;color:#499;font-weight: bold;text-shadow:1px 1px #fff;line-height:28px;}
 /*여니 이미지 2넣기*/
 /*section 3 -문구 샵입-*/
-article .section3{margin:20px 0; width:100%; height:80px;}
+article .section3{margin:20px 0; width:100%; height:80px; background-color:rgba(10,30,30,.5)}
 article .section3 p{font-size: 30px; text-align: center;line-height:80px;}
 /* section 4 -SKILLS-*/
 article .section4{margin:0 0;
                   width:100%; height:700px;}
 article .section4 .section4-logo{margin-left: 100px; text-align: center;
-                                width: 200px; height:100px;}
-article .section4 .section4-logo h2 a{text-decoration: none; line-height: 70px;
-                                     color:black; font-size: 30px}
+                                width: 200px; height:100px;background-color:rgba(10,30,30,.5)}
+article .section4 .section4-logo h2 a{text-decoration: none; line-height: 60px;
+                                    color:#ccc;; font-size: 30px;text-shadow:1px 1px #fff;}
+article .section4 .section4-logo p{line-height: 20px; font-size: 14px; font-weight: bold;}
 /* 3x2 grid-list */
-article .section4 .section4-skills{margin:0 auto; outline: 1px solid powderblue;
-                                    width:80%; height:600px; overflow: hidden;}
+article .section4 .section4-skills{margin:0 auto;width:80%; height:600px; }
+                                    /*overflow: hidden;*/
 article .section4 .section4-skills ul{list-style: none; margin-top:20px;width:100%;background-color:#ccc;}
-article .section4 .section4-skills li{display: inline-block;outline: 1px solid powderblue;
+article .section4 .section4-skills li{display: inline-block;
                                       width:250px;height:250px; margin:10px; background-color:white;}
 article .section4 .section4-skills li p{display: inline-block;width:100%;background-color:gray;
                                         color:white; font-weight: 300; text-align: center; text-shadow:2px 2px black; }
+article .section4 .section4-skills li span{display:block;}
+article .section4 .section4-more{width:100px; height:60px; float:right;position:relative;top:-100px;right:20px;
+                             background-color:rgba(255,200,200,.8);text-align: center;border-radius:10px 10px;border-top:3px solid tomato}
+article .section4 .section4-more a{text-decoration: none;font-size:20px;line-height:28px;color:#fff;font-weight: bold;text-shadow:1px 1px #777;}
+/*여니 이미지 2넣기*/
 /*section 5 포트폴리오*/
 article .section5{margin:0 0; padding-top: 20px;
                   width:100%; height:700px;}
-article .section5 .section5-logo{margin-left:100px; text-align: center;
+article .section5 .section5-logo{margin-left:100px; text-align: center; background-color:rgba(10,30,30,.5);
                                 width: 200px; height:100px; position: relative;}
-article .section5 .section5-logo h2 a{text-decoration: none;
-                                      color:black; font-size: 30px}
+article .section5 .section5-logo h2 a{text-decoration: none; line-height: 60px;
+                                      color:#ccc; font-size: 30px;text-shadow:1px 1px #fff;}
+article .section5 .section5-logo span{line-height: 20px; font-size: 14px; font-weight: bold;}
 article .section5 .section5-images{display: inline-block; margin-left: 50px;
+<<<<<<< HEAD
                                    width:1000px; height:600px; position:relative; left:300px;top:-40px;}
+=======
+                                   width:1000px; height:600px; position:relative; left:400px;top:-100px;}
+>>>>>>> 8315e27bf995822e2edd35ed8a141cfc0e85b021
 article .section5 .section5-images ul{list-style:none; display: inline-block;}
-article .section5 .section5-images ul li{display: block;}
+article .section5 .section5-images ul li{display: inline-block;}
 article .section5 .section5-images ul li.i1
                     {width:350px; height:200px; margin:10px 0; outline: 1px solid black;position: relative; left:0;top:0; background-color: powderblue;}
 article .section5 .section5-images ul li.i2
-                    {width: 550px; height: 300px; margin:10px 0; outline: 1px solid black;position: relative; left:0;top:-105px;}
+                    {width: 550px; height: 300px; margin:10px 0; outline: 1px solid black;position: relative;right:20px;top:-10px;}
+article .section5 .section5-more{width:100px; height:60px; float:right;position:relative;z-index:1;top:500px;right:190px;
+                                                 background-color:rgba(50,200,150,.8);text-align: center;border-top:3px solid black}
+article .section5 .section5-more a{text-decoration: none;font-size:20px;line-height:28px;color:gray;font-weight: bold;text-shadow:1px 1px #fff;}
+
 
 
 footer{background-color: black;}
+
 footer div{text-align: center;}
 footer div span{color:white;}
+/*반응형*/
 /* -1.위치 (position& margin& padding& outline)
    -2.크기&속성(width& height& inline-block..)
    -3.색&폰트(bgc& font)

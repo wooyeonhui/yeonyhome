@@ -2,31 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css" type="text/css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="mediatype and|not|only(media feature)"href="css/responsive_index.css">
+  <link rel="stylesheet" href="css/responsive_index.css">
   <title>Document</title>
 </head>
 <body id="target">
   <header>
+    <nav>
+      <a href="#none" class="menu">Main Menu</a>
+      <ul>
+         <li>
+           <a href="http://accidentlywoo.dothome.co.kr">HOME</a>
+         </li>
+         <li>
+           <a href="#none">ABOUT ME</a>
+           <p><a href="about_me.html">go page</a><img src="" alt=""></p>
+         </li>
+         <!-- 짧은 경력 -->
+         <li>
+           <a href="#none">SKILLS</a>
+           <p><a href="skills.html">go page</a><img src="" alt=""></p>
+         </li>
+         <li>
+           <a href="#none">PORTFOLIO</a>
+           <p><a href="portfolio.html">go page</a><img src="" alt=""></p>
+         </li>
+         <li>
+           <a href="#none">CONTACT</a>
+           <p><a href="contact.html">go page</a><img src="" alt=""></p>
+         </li>
+         <li>
+           <a href="#none">JOIN</a>
+           <p><a href="join.html">go page</a><img src="" alt=""></p>
+         </li>
+      </ul>
+    </nav>
   </header>
-  <nav>
-    <ul>
-       <li><a href="#none">HOME</a></li>
-       <li><a href="#none">ABOUT ME</a></li>
-       <!-- 짧은 경력 -->
-       <li><a href="#none">SKILLS</a></li>
-       <li><a href="#none">PORTFOLIO</a></li>
-       <li><a href="#none">CONTACT</a></li>
-       <li><a href="#none">JOIN</a></li>
-    </ul>
-  </nav>
-    <div id="style-control">
-          <input type="button" value="white" onclick="document.getElementById('target').className='white'">
-          <input type="button" value="black" onclick="document.getElementById('target').className='black'">
-    </div>
   <article>
-    <div class="section1">
+    <div class="section1" id="section1">
       <div class="section1-log">
            <h2><a href="http://accidentlywoo.dothome.co.kr">Accidently Woo</a></h2>
            <p>Awesome Human</p>
@@ -41,11 +58,11 @@
      </div>
    </div>
 
-   <div class="section2">
+   <div class="section2" id="section2">
      <div class="section2-aboutme">
        <div class="section2-logo">
          <h2><a href="#none">ABOUT ME</a></h2>
-         <span>뭐라뭐라쓰겟지 간지나게</span>
+         <span>gorgeous</span>
        </div>
      </div>
      <div class="section2-personal">
@@ -64,6 +81,10 @@
           </tr>
         </table>
      </div>
+       <div class="section2-more">
+         <a href="about_me.html">SHOW MORE</a>
+       </div>
+                                        <!-- more button -->
      <div class="section2-image">
         <!-- 오른쪽에 옆모습 -->
      </div>
@@ -74,7 +95,7 @@
      <p>-JUST DO IT-</p>
    </div>
 
-   <div class="section4">
+   <div class="section4" id="section4">
      <div class="section4-logo">
        <h2><a href="#none">SKILLS</a></h2>
        <p>publishing</p>
@@ -82,24 +103,39 @@
      <div class="section4-skills">
       <ul>
         <!-- grid list -->
-        <li><p>PhoShop</p>
+        <li>
+            <p>PhoShop</p>
+            <span></span>
         </li>
-        <li><p>Illustrator</p>
+        <li>
+          <p>Illustrator</p>
+          <span></span>
         </li>
-        <li><p>HTML</p>
+        <li>
+          <p>HTML</p>
+          <span></span>
         </li>
-        <li><p>CSS</p>
+        <li>
+          <p>CSS</p>
+          <span></span>
         </li>
-        <li><p>JavaScript</p>
+        <li>
+          <p>JavaScript</p>
+          <span></span>
         </li>
-        <li><p>Java</p>
+        <li>
+          <p>Java</p>
+          <span></span>
         </li>
         <!-- 흠흠 -->
       </ul>
+      <div class="section4-more">
+        <a href="skills.html">SHOW MORE</a>
+      </div>
     </div>
    </div>
 
-   <div class="section5">
+   <div class="section5" id="section5">
       <div class="section5-left section5-logo">
          <h2><a href="#none">PORTFOLIO</a></h2>
          <span>포트폴리오 썸네일입니다.</span>
@@ -112,9 +148,10 @@
         </ul>
         <ul>
           <li class="i2"><img src="" alt="#"><a href="#"></a></li>
-          <li class="i2"><img src="" alt="#"><a href="#"></a></li>          
+          <li class="i2"><img src="" alt="#"><a href="#"></a></li>
         </ul>
       </div>
+      <div class="section5-more"><a href="portfolio.html">SHOW MORE</a></div>
    </div>
 
    <div class="portfolio"></div>
