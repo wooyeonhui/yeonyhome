@@ -1,4 +1,4 @@
-@media screen and (max-width:500px)
+@media screen and (max-width:768px) and (min-width:560px)screen\0 and (min-width:560px), screen\9
 {
   nav {
     position: fixed;z-index:10; right:10px; top:20px;
@@ -118,13 +118,15 @@
   /*여니 이미지 2넣기*/
   /*section 3 -문구 샵입-*/
   article .section3{
-    margin-top:10px;
-    width:100%; height:80px;
+    margin:10px 0;
+    width:400px; height:80px;
     outline: 0 ;
   }
   article .section3 p{
-    text-align:center; line-height:80px;
-    margin:0 auto;background-color:gray;
+    display: block;
+    width: 100px;
+    line-height:80px;
+    margin:100px auto;background-color:gray;
     color:white;font-size: 18px; font-weight:600;
   }
 
