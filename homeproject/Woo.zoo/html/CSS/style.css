@@ -1,16 +1,55 @@
-*{margin : 0; padding :0; font-family:'Nanum Gothic'; }
+*{margin:0; padding:0; font-family:'Nanum Gothic';}
+
+/* css reset*/
+
+header{
+  position: fixed; top:0;
+  width:100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+header ul{
+  list-style: none;
+}
+header ul li{
+  display:inline-block;
+  *zoom:1;
+}
+header ul li{
+
+}
+header ul li:hover{
+  height:40px;
+  transition: .5s;
+  background-color: rgba(255,255,255,0.8);
+  border-bottom:8px solid green;
+  color:#0a3;
+}
+header ul li a{
+  text-decoration: none;
+  text-align: center;
+  width:100px;  height:40px;
+  display:block;
+  line-height: 40px;
+  color:white; font-weight: bold;
+}
+header ul li a:hover{
+  color:#1a3;
+}
 
 nav {
-  position: fixed;  right:80px;  top:10px;  z-index:1;
+  position: fixed;  right:80px;  top:80px;  z-index:1;
   margin-bottom:-10px;
   display:inline-block;
+  *zoom:1;
   background-color:rgba(0,0,0,.2)
 }
 nav ul{
   list-style: none; display:inline-block;
+  *zoom:1;
 }
 nav ul li{
   display:inline-block;
+  *zoom:1;
   float: left;
   height:100px;
 }
@@ -91,6 +130,7 @@ article .section2 .section2-personal{
   margin-left:100px;
   vertical-align: middle;
   display: inline-block;
+  *zoom:1;
   width:20%; height:380px;
 }
 article .section2 .section2-personal table{
@@ -110,6 +150,7 @@ article .section2 .section2-personal table th{
 article .section2 .section2-image{
   position:absolute; z-index:-1;
   display: inline-block;
+  *zoom:1;
   width: 60%; height: 380px;
   background-color: powderblue;
 }
@@ -134,7 +175,7 @@ article .section3{
   text-align: center;
   background-color:rgba(10,30,30,.5)
 }
-article .section3 p{
+article .section3 span{
   font-size: 30px; line-height:80px;
 }
 /* section 4 -SKILLS-*/
@@ -170,11 +211,13 @@ article .section4 .section4-skills ul{
 article .section4 .section4-skills li{
   margin:10px;
   display: inline-block;
+  *zoom:1;
   width:250px; height:250px;
   background-color:white;
 }
 article .section4 .section4-skills li p{
   display: inline-block;
+  *zoom:1;
   width:100%;
   color:white; font-weight: 300;
   text-align: center; text-shadow:2px 2px black;
@@ -215,15 +258,18 @@ article .section5 .section5-logo span{
 }
 article .section5 .section5-images{
   position:relative; left:300px;top:-40px;
-  display: inline-block; margin-left: 50px;
+  display: inline-block;
+  *zoom:1; margin-left: 50px;
   width:1000px; height:600px;
 }
 article .section5 .section5-images ul{
   width:1300px;
   list-style:none; display: inline-block;
+  *zoom:1;
 }
 article .section5 .section5-images ul li{
   display: inline-block;
+  *zoom:1;
 }
 article .section5 .section5-images ul li.i1{
   position: relative; left:0;top:0;
@@ -231,12 +277,32 @@ article .section5 .section5-images ul li.i1{
   margin:10px 0;
   outline: 1px solid black; background-color: powderblue;
 }
+article .section5 .section5-images ul li.i1 img{
+  width: 350px; height:200px;
+  overflow: hidden;
+}
+article .section5 .section5-images ul li.i1 a{
+  display: block;
+  width: 350px; height:200px;
+  text-indent: -9999px; font-size:0;
+}
 article .section5 .section5-images ul li.i2{
   position: relative;right:20px;top:-10px;
   width: 550px; height: 300px;
   margin:10px 0;
   outline: 1px solid black;
 }
+article .section5 .section5-images ul li.i2 img{
+  width: 550px; height:300px;
+  overflow: hidden;
+}
+article .section5 .section5-images ul li.i2 a{
+  position: relative; top:-305px;
+  display: block;
+  width: 550px; height:300px;
+  text-indent: -9999px; font-size:0;
+}
+
 article .section5 .section5-more{
   position:relative; z-index:1; top:500px; right:190px;
   float:right; width:100px; height:60px;
