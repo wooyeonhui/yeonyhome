@@ -1,0 +1,18 @@
+file vs database
+
+database : 1.안전하다. 2.빠르다(인덱스) 3.프로그래밍적 제어가능
+
+      데이터베이스>관계형데이터베이스>MySQL,MSSQL,Oracle
+
+      MySQL : open source
+      MySQL AB -> SUN -> Oracle
+      MySQL == MariaDB(마리아 디비의 발전속도가 더빠르다)
+
+      Structured : 표 == table
+
+      SQL : Structured Query Language
+
+      MySQL Client  <------>  MySQL Server
+                SELECT*FROM topic;
+                -SQL
+      MySQL monitor

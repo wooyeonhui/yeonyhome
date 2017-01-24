@@ -16,6 +16,19 @@ function mark(input){
      input.value = "-" + input.value
   }
 }
-fuction calc(){
+function calc(form){
+  form.display.value = eval(form.display.value)
+}
+function checkNum(str){
+  for (var i = 0;i < str.length; i++ ){
+    var ch = str.substring(i,i+1)
+    if (ch < "0"||ch >"9"){
+      if(ch !="/" && ch != "*" && ch !="+" && ch !="-" ){
+            alert("invalid entry!")
+            return false
+      }
 
+    }
+  }
+  return true
 }

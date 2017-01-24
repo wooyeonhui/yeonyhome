@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="calculator.css">
+  <script type="text/javascript">
+
+  //자바스크립트 내의 전역변수 - 모든 함수가 함께 사용이 가능한 변수들
+  var left;//좌변값 저장할 변수
+  var right;//우변값 ''
+  var operand;//연산자 저장할 변수
+
+    function addChar(item){
+      var ori = document.getElementById("display").value;
+      ori = ori + item;
+      document.getElementById("display").value= ori;
+    }
+    function addOperand(oper){
+      //1.지금까지 눌럿던거 left 변수에 저장하기
+      left = document.getElementById("display").value;
+      operand = oper;//연산자 저장하기
+      document.getElementById("display").value="";//지우고 다른 입력받을거 준비중
+    }
+    function Calculate(){
+      right = document.getElementById("display").value;
+      var result=0;
+
+      if(operand =="+")
+        result = eval(left) + eval(right);
+      else if(operand =="-")
+        result = eval(left) - eval(right);
+      else if(operand =="*")
+        result = eval(left) * val(right);
+      else if(operand =="/")
+        result = eval(left) / eval(right);
+
+      document.getElementById("display").value = result;
+    }
+
+    function Clear() {
+     left=""
+     right=""
+     operand=""
+     document.getElementById("display").value="";
+    }
+    function BackSpace(){
+      var temp = document.getElementById("display").value;
+      if(temp.length>0)
+        temp = temp.substring(0,temp.length-1);
+      document.getElementById("display").value=temp;
+    }
+    function DotProcess() {
+      var temp = document.getElementById("display").value;
+      var pos = temp.indexOf('.');
+      if(pos == -1)//이 없으므로. 하나를 추가하자 - 정수를 실수로 바꾼다.
+        addChar('.');
+    }
+    function changeSign(){
+      var temp = document.getElementById("display").value;
+      var pos = temp.indexOf('-');
+      if(pos == -1)
+        document.getElementById("display").value = "-"+temp;
+      else
+        temp = temp.substring(1,temp.length);
+    }
+  </script>
+
+
+  <div class="wrapper">
+    <div>
+      <h1>Calculator</h1>
+    </div>
+    <form action="#none">
+
+      <table>
+         <tr>
+           <td colspan="4">
+             <input name="display" id="display"type="button" value="" style="width:200px">
+           </td>
+         </tr>
+         <tr>
+           <td>
+              <input type="button" value="7" onclick="addChar('7')"style="width:48px">
+           </td>
+           <td>
+              <input type="button" value="8" onclick="addChar('8')"style="width:48px">
+           </td>
+           <td>
+              <input type="button" value="9" onclick="addChar('9')"style="width:48px">
+           </td>
+           <td>
+              <input type="button" value="/" onclick="addOperand('/')"style="width:48px">
+           </td>
+         </tr>
+         <tr>
+           <td>
+              <input type="button" value="4" onclick="addChar('4')"style="width:48px">
+           </td>
+           <td>
+              <input type="button" value="5" onclick="addChar('5')"style="width:48px">
+           </td>
+           <td>
+              <input type="button" value="6" onclick="addChar('6')"style="width:48px">
+           </td>
+           <td>
+              <input type="button" value="*" onclick="addOperand('*')"style="width:48px">
+           </td>
+         </tr>
+         <tr>
+           <td>
+              <input type="button" value="1" onclick="addChar('1')"style="width:48px">
+           </td>
+           <td>
+              <input type="button" value="2" onclick="addChar('2')"style="width:48px">
+           </td>
+           <td>
+              <input type="button" value="3" onclick="addChar('3')"style="width:48px">
+           </td>
+           <td>
+              <input type="button" value="-" onclick="addOperand('-')"style="width:48px">
+           </td>
+         </tr>
+         <tr>
+           <td>
+              <input type="button" value=" 0 " onclick="addChar('0')"style="width:48px">
+           </td>
+           <td>
+              <input type="button" value="." onclick="DotProcess('.')"style="width:48px">
+           </td>
+           <td>
+              <input type="button" value="+-" onclick="changeSign()"style="width:48px">
+           </td>
+           <td>
+              <input type="button" value="+" onclick="addOperand('+')"style="width:48px">
+           </td>
+         </tr>
+         <tr>
+           <td >
+             <input type="button" value="<-" onclick="BackSpace()"style="width:48px">
+          </td>
+           <td >
+              <input type="button" value=" c " onclick="Clear()"style="width:48px">
+           </td>
+           <td colspan="2">
+              <input type="button" value="=" onclick="Calculate()"style="width:130px">
+           </td>
+         </tr>
+      </table>
+    </form>
+
+  </div>
+
+  <footer>
+    <div><span>ⓒ 2017 Accidently Woo I ALL rights reserved</span>
+      <br/><span>Powered by KMC & BHS</span>
+    </div>
+  </footer>
+</body>
+</html>
