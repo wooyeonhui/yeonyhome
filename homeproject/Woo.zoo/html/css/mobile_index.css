@@ -1,0 +1,320 @@
+@media screen and (max-width:500px)
+{
+  body{
+    max-width: 400px;
+  }
+  header{
+    position: fixed; top:0;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  header ul{
+    list-style: none;
+  }
+  header ul li{
+    display:inline-block;
+    *zoom:1;
+  }
+  header ul li{
+
+  }
+  header ul li:hover{
+    height:40px;
+    transition: .5s;
+    background-color: rgba(255,255,255,0.8);
+    border-bottom:8px solid green;
+    color:#0a3;
+  }
+  header ul li a{
+    text-decoration: none;
+    text-align: center;
+    width:75px;  height:40px;
+    display:block;
+    line-height: 40px;
+    color:white; font-weight: bold;
+  }
+  header ul li a:hover{
+    color:#1a3;
+  }
+
+  nav {
+    position: fixed;z-index:10; right:10px; top:45px;
+    display: block;
+  }
+  nav a.menu{
+    height:35px; width:100px;
+    display:block;
+    background-color:rgba(10,100,50,.5);
+    border:1px solid #173;
+    line-height:35px; text-align: center; text-decoration: none;
+    color:white;
+  }
+  nav  ul{
+    position:absolute;
+    width:200px; display: none;
+  }
+  nav  ul li{
+    height:55px;
+    float:none; line-height: 55px;
+  }
+  nav  ul li a{
+    transition: .1s;
+    border-left:0px solid gray;
+  }
+  nav  ul li a:hover{
+    border-top: 0;border-left: 5px #f4c22d solid;
+  }
+  /*nav .menu ul li a &:hover{border-top:0; border-left:5px solid gray;}*/
+  article div[class^="section"]{display:block; }
+  /*'section'들어간 class 모두 선택*/
+  /*section 1 */
+  article .section1{
+    margin:0 0; padding-top:20px;
+    width:100%; height:480px;
+    overflow: hidden;
+  }
+  article .section1 .section1-log{
+    width: 100px; height:80px;
+    margin:170px 50px;
+    text-align: center;
+    background-color: rgba(255,255,255,.7)
+  }
+  article .section1 .section1-log h2 a{
+    text-decoration: none;
+    color:black; font-size: 18px; font-family: dottum;
+  }
+  article .section1 .section1-log p{
+    line-height: 10px;
+    font-size: 12px; font-family: dottum;
+  }
+  article .section1 .section1-bg-bgi{
+    position: absolute; top:0; z-index: -1;
+    width:100%; height:500px;
+    background-image: url(http://i.imgur.com/gI771Mu.jpg);
+    background-repeat:no-repeat;-webkit-background-size:cover;
+  }
+  /*이미지 바꾸기 webkit-background-size:cover;은 반응형에서 쓰자*/
+  article .section1 .section1-bg-overlay{
+    outline: 1px solid tomato;
+  }
+  /*이미지에 오버레이할 일러스트*/
+  /*section 2  About me*/
+  article .section2{
+    overflow: hidden;
+    width:100%; height:450px;
+    outline: 0 ;
+  }
+  article .section2 .section2-logo{
+    margin:0 auto;
+    text-align: center;
+    width: 200px; height:100px;
+  }
+  article .section2 .section2-logo h2 a{
+    text-decoration: none; line-height: 60px;
+    color:black; font-size: 18px; font-family: dottum;
+  }
+  article .section2 .section2-logo span{
+    line-height: 20px;
+    font-size: 12px;font-family: dottum;
+  }
+  article .section2 .section2-personal{
+    margin-left:20px; margin-top: 20px;
+    vertical-align: middle;
+    display: inline-block; outline: 0 ;
+    width:20%; height:380px;
+  }
+  article .section2 .section2-personal table{
+    width:250px; height:150px;
+    text-align: left; line-height: 1.5;
+    border-left: 3px solid gray;
+  }
+  article .section2 .section2-personal table td{
+    padding-left: 20px; vertical-align:middle;
+    border-bottom: 1px solid gray;
+  }
+  article .section2 .section2-personal table th{
+    vertical-align:middle;
+    border-bottom: 1px solid gray;
+  }
+  article .section2 .section2-image{
+    width: 60%; height: 300px;
+    float:right;
+    margin-top:50px;
+    display: inline-block;
+    background-color: powderblue;
+   }
+  article .section2 .section2-more{
+    /*position: relative;top:-90px;right:-160px;*/
+    width:100px; height:30px;
+    text-align:center;
+    border-top:3px solid #55d;
+    background-color:powderblue;
+  }
+  article .section2 .section2-more a{
+    text-decoration:none;text-shadow:1px 1px #fff;line-height:28px;
+    font-size:14px;color:#499;font-weight: bold;
+  }
+
+  /*여니 이미지 2넣기*/
+  /*section 3 -문구 샵입-*/
+  article .section3{
+    overflow: hidden;
+    margin:10px auto;
+    width:100%; height:80px;
+    outline: 0 ;
+  }
+  article .section3 span{
+    margin:0 auto;
+    background-color:gray;
+    color:white;font-size: 18px;
+    font-weight:600;line-height: 80px;
+  }
+
+  /* section 4 -SKILLS-*/
+  article .section4{
+    width:100%; height:450px;
+    overflow: hidden;
+  }
+  article .section4 .section4-logo{
+    margin:0 auto;
+    width: 200px; height:100px;
+    text-align: center;
+
+  }
+  article .section4 .section4-logo h2 a{
+    text-decoration: none; line-height: 60px;
+    color:black; font-size: 18px; font-family: dottum;
+      }
+  article .section4 .section4-logo p{
+    font-size: 18px; font-family: dottum; font-size: 14px;
+  }
+  /* grid-list */
+  article .section4 .section4-skills{
+    margin:0 auto;
+    width:300px; height:600px;
+  }
+  article .section4 .section4-skills ul{
+    margin:10px 10px;
+    width:290px;height:340px;
+    list-style: none;
+    background-color:#ccc;
+  }
+  article .section4 .section4-skills li{
+    margin:10px 10px;
+    width:120px;height:80px;
+    display: inline-block;
+  }
+  article .section4 .section4-skills li p{
+    width:100%; height:40px;
+    display: inline-block;
+    text-align: center; line-height: 40px;
+    text-shadow:2px 2px black;
+    color:white; font-weight: 300;
+    background-color:gray;
+  }
+  article .section4 .section4-skills li span{
+    /*display: block;*/
+    background-color:rgba(255,255,255,.1);
+  }
+  article .section4 .section4-more{
+    position:relative;top:-55px;right:-35px;
+    width:100px; height:40px;
+    /*float:right;*/
+    background-color:rgba(255,200,200,.8);
+    text-align: center;
+    border-radius:10px 10px; border-top:3px solid tomato
+  }
+  article .section4 .section4-more a{
+    text-decoration: none;line-height:28px;text-shadow:1px 1px #777;
+    font-size:14px;color:#fff;font-weight: bold;
+  }
+  /*section 5 포트폴리오*/
+  article .section5{
+    width:100%; height:1250px;
+  }
+  article .section5 .section5-logo{
+    position: relative;
+    margin:0 auto;
+    text-align: center;
+    width: 200px; height:100px;
+  }
+  article .section5 .section5-logo h2 a{
+    text-decoration: none; line-height: 60px;
+    color:black; font-size: 18px; font-family: dottum;
+  }
+  article .section5 .section5-logo span{
+    font-size: 14px;font-family: dottum;
+  }
+  article .section5 .section5-images{
+    position:static;
+    margin:0 auto;
+    width:300px; height:600px;
+    display:inline-block;
+  }
+  article .section5 .section5-images ul{
+    margin-left:20px; margin: 0 auto
+    list-style:none; display: inline-block;
+  }
+  article .section5 .section5-images ul li.i1{
+    position:relative;
+    margin-top:10px;
+    display:list-item;
+    width:300px; height:200px;
+    background-color: powderblue;
+  }
+  article .section5 .section5-images ul li.i1 img{
+    width: 300px; height:200px;
+    overflow: hidden;
+  }
+  article .section5 .section5-images ul li.i1 a{
+    width: 300px; height:200px;
+  }
+
+  article .section5 .section5-images ul li.i2{
+    position: relative; left:0;top:-10px;
+    margin-top:10px;
+    width:300px; height:200px;
+    display:list-item;
+    outline: 1px solid #ccc;
+    background-color: powderblue;
+  }
+  article .section5 .section5-images ul li.i2 img{
+    width: 300px; height:200px;
+    overflow: hidden;
+  }
+  article .section5 .section5-images ul li.i2 a{
+    width: 300px; height:200px;
+  }
+
+
+  article .section5 .section5-more{
+    position: static;
+    display: inline-block;
+    width:100px; height:40px;
+    background-color:rgba(50,200,150,.8);
+    text-align: center;
+    border-top:3px solid black
+   }
+  article .section5 .section5-more a{
+    text-decoration:none; line-height:28px;text-shadow:1px 1px #fff;
+    font-size:14px; color:gray; font-weight: bold;
+  }
+  footer{
+    background-color: black;
+  }
+  footer div{
+    text-align: center;
+  }
+  footer div span{
+    color:white;
+  }
+  /*반응형*/
+  /* -1.위치 (position& margin& padding& outline)
+     -2.크기&속성(width& height& inline-block..)
+     -3.색&폰트(bgc& font)
+  */
+
+
+
+
+}

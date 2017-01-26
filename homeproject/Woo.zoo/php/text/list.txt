@@ -1,4 +1,0 @@
-<li><a href="http://accidentlywoo.dothome.co.kr/indext.php?id=1">About.Me</a></li>
-<li><a href="http://accidentlywoo.dothome.co.kr/indext.php?id=2">My Portfolio</a></li>
-<li><a href="http://accidentlywoo.dothome.co.kr/indext.php?id=3">My Study</a></li>
-<li><a href="http://accidentlywoo.dothome.co.kr/indext.php?id=4">Contact.Me</a></li>

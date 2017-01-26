@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="calculator.css">
+  <script type="text/javascript"src="calculator.js">
+  </script>
+  <title>calculator</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div>
+      <h1>Calculator</h1>
+    </div>
+    <form action="#none">
+
+      <table>
+         <tr>
+           <td colspan="4">
+             <input name="display"type="button" value="0" >
+           </td>
+         </tr>
+         <tr>
+           <td>
+              <input type="button" value="7" onclick="go(this.form.display,'7')">
+           </td>
+           <td>
+              <input type="button" value="8" onclick="go(this.form.display,'8')">
+           </td>
+           <td>
+              <input type="button" value="9" onclick="go(this.form.display,'9')">
+           </td>
+           <td>
+              <input type="button" value="/" onclick="go(this.form.display,'/')">
+           </td>
+         </tr>
+         <tr>
+           <td>
+              <input type="button" value="4" onclick="go(this.form.display,'4')">
+           </td>
+           <td>
+              <input type="button" value="5" onclick="go(this.form.display,'5')">
+           </td>
+           <td>
+              <input type="button" value="6" onclick="go(this.form.display,'6')">
+           </td>
+           <td>
+              <input type="button" value="*" onclick="go(this.form.display,'*')">
+           </td>
+         </tr>
+         <tr>
+           <td>
+              <input type="button" value="1" onclick="go(this.form.display,'1')">
+           </td>
+           <td>
+              <input type="button" value="2" onclick="go(this.form.display,'2')">
+           </td>
+           <td>
+              <input type="button" value="3" onclick="go(this.form.display,'3')">
+           </td>
+           <td>
+              <input type="button" value="-" onclick="go(this.form.display,'-')">
+           </td>
+         </tr>
+         <tr>
+           <td>
+              <input type="button" value=" 0 " onclick="go(this.form.display,'0')">
+           </td>
+           <td>
+              <input type="button" value="." onclick="go(this.form.display,'.')">
+           </td>
+           <td>
+              <input type="button" value="+-" onclick="mark(this.form.display)">
+           </td>
+           <td>
+              <input type="button" value="+" onclick="go(this.form.display,'.')">
+           </td>
+         </tr>
+         <tr>
+           <td >
+             <input type="button" value="<-" onclick="delete(this.form.display)">
+          </td>
+           <td >
+              <input type="button" value=" c " onclick="this.form.display.value=0">
+           </td>
+           <td colspan="2">
+              <input type="button" value="=" onclick="">
+           </td>
+         </tr>
+      </table>
+    </form>
+
+  </div>
+</body>
+</html>
