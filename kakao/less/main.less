@@ -237,8 +237,12 @@ section{
         a{
           padding-top: 30px;
           .cs;
-            img{
+            div{
               .imgs;
+              img{
+                .imgs;
+                .hscale;
+              }
             }
             h2{
               .h2;
@@ -259,9 +263,13 @@ section{
         a{
           padding-top:65px;
           .cs;
+          div{
+            .imgs;
             img{
               .imgs;
+              .hscale;
             }
+          }
             h2{
               .h2;
               background-position:0 -260px;
@@ -296,6 +304,25 @@ section{
             color:#fff;
           }
         }
+        .slide-s{
+            position: relative;
+            z-index: 2;
+            top:290px;
+            left:150px;
+            width: 100px; height:10px;
+            display: inline-block;
+            span{
+              text-indent:-999px;
+              font-size:0;
+              display: inline-block;
+              width:9px; height:3px;
+              background-color:#fff;
+              &:first-child{
+                width:15px;
+                background-color: #666;
+              }
+            }
+         }
         .view{
           overflow: hidden;
           width: 356px;
@@ -303,18 +330,6 @@ section{
           position: relative;
           ul{
             li{
-              &.on{
-                span{
-                  background-color:#666;
-                }
-              }
-              span{
-                position: relative;
-                top:295px;left:140px;
-                display: inline-block;
-                width:9px; height:3px;
-                background-color:#fff;
-              }
               display: inline-block;
               div{
                 background-color: #ddd;
@@ -391,8 +406,12 @@ section{
        a{
          .cs;
          padding-top:65px;
-         img{
+         div{
            .imgs;
+           img{
+             .imgs;
+             .hscale;
+           }
          }
          h2{
            .h2;
@@ -410,17 +429,20 @@ section{
      margin:0;
      height:555px;
      a{
-       img{
-       position: relative;
-       width:429px;
-       height:555px;
-       top:-468px;
-       &:first-child{
-         width: 308px;
-         height:468px;
-         left:45px;
-         top:40px;
-         z-index: 1;
+       div{
+         width:429px;
+         height:555px;
+         img{         
+         position: relative;
+         top:-468px;
+         &:first-child{
+           width: 308px;
+           height:468px;
+           left:45px;
+           top:40px;
+           z-index: 1;
+           .hscale;
+         }
        }
      }
    }

@@ -1,30 +1,153 @@
+// option
+.fl{float: left;}
+.fr{float: right;}
+.pr{position: relative;}
+.pa{position: absolute;}
+
+
 header{
-  height:130px;
-  background-color: #000;
-  >a{
-    float: left;
-    display: block;
-    width: 100px;
-    height:60px;
+  background-color: #99CCCC;
+  height:70px;
+  >div{
+    width:1200px;
+    margin: 0 auto;
+    .logo{
+      img{
+        width:170px;
+        height:40px;
+        padding:15px 20px;
+      }
     h1{
-      color: #fff;
-      font-size: 14px;
+      font-size: 0;
+      text-indent:-999px;
     }
-  }
-  nav{
-    height:60px;
-    float: right;
-    li{
-      display: inline-block;
-      a{
-        line-height:60px;
-        color:#fff;
-        font-size:24px;
+    }
+    .sns{
+      margin:20px 20px;
+      ul{
+        li{
+          width:20px;height:20px;
+          background-color:#fff;
+          display: inline-block;
+        }
+      }
+    }
+    .search{
+      input{
+        width:120px;
+        height: 22px;
+        margin:20px;
+        padding:5px 28px 5px 5px;
+        border:1px solid #fff;
+        border-radius:3px;
+      }
+      i{
+        position: relative;
+        right:50px;
+        &::before{
+          content: "옹";
+        }
       }
     }
   }
-  .section-slide-controller{
-    height:70px;
-    background-color: #aaa;
+}
+
+nav{
+  height:60px;
+  background-color: #fff;
+  ul{
+    height:60px;
+    width:1200px;
+    margin:0 auto;
+    display: block;
+    li{
+      position: relative;
+      left:-200px;
+      display: inline-block;
+      a{
+        line-height: 60px;
+        padding: 0 20px;
+        font-size:14px;
+        color: #99CCCC;
+        font-weight: 600;
+        &:hover{
+          color: #0099CC;
+        }
+      }
+      &.on{
+        background-color: #0099CC;
+        a{
+          color: #fff;
+        }
+      }
+    }
   }
 }
+
+section{
+  .slide{
+    width:100%;
+    height:600px;
+    background-color: powderblue;
+  }
+  .artists{
+    width:1200px;
+    margin: 0 auto;
+    h2{
+      padding:20px 0;
+      font-size:24px;
+      color:#99cccc;
+      font-weight:700;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    span{
+      font-size:14px;
+    }
+    i{
+      vertical-align: middle;
+      display: inline-block;
+      width:956px;
+      height:14px;
+      background-image: url('../image/pattern.png');
+    }
+    >div{
+      width:1200px;
+      height:200px;
+      background-color: #99CCCC;
+      margin-bottom:40px;
+      .artists-btn{
+      }
+      .artists-view{
+        width:1110px;
+        height:200px;
+        margin:0 auto;
+        background-color: #fff;
+      }
+    }
+  }
+  .releases{
+    width:1200px;
+    margin: 0 auto;
+    h2{
+      padding:20px 0;
+      font-size:24px;
+      color:#99cccc;
+      font-weight:700;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    span{
+      font-size:14px;
+    }
+    i{
+      vertical-align: middle;
+      display: inline-block;
+      width:943px;
+      height:14px;
+      background-image: url('../image/pattern.png');
+    }
+  }
+}
+
+footer{}

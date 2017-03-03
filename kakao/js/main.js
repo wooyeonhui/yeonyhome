@@ -27,6 +27,14 @@
                     left:end
                 }).parent().siblings().removeClass();
 
+                $('.slide-s span').eq(i).css({
+                  'width':'15px',
+                  'background-color':'#666'
+                }).siblings().css({
+                  'width':'9px',
+                  'background-color':'#fff'
+                })
+
                 if(idx == $('.view li').length){
                     idx = 0
                     movement('100%',0,idx)

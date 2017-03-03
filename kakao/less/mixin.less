@@ -6,6 +6,7 @@
 .imgs(){
   width:356px;
   height:280px;
+  overflow: hidden;
 }
 .h2(){
   display: block;
@@ -29,5 +30,13 @@
 .hbc(){
   &:hover{
     background-color: #eaeaea;
+  }
+}
+.hscale(){
+  transition:.5s;
+  &:hover{
+    -ms-transform: scale(1.2,1.2); /* IE 9 */
+    -webkit-transform: scale(1.2,1.2); /* Safari */
+    transform: scale(1.2,1.2); /* Standard syntax */
   }
 }

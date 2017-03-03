@@ -236,6 +236,7 @@ section .left .l-l .kakaoservice a {
 section .left .l-l .kakaoservice a img {
   width: 356px;
   height: 280px;
+  overflow: hidden;
 }
 section .left .l-l .kakaoservice a h2 {
   display: block;
@@ -283,9 +284,24 @@ section .left .l-r .taxi a {
   width: 355px;
   margin: 0 auto;
 }
-section .left .l-r .taxi a img {
+section .left .l-r .taxi a div {
   width: 356px;
   height: 280px;
+  overflow: hidden;
+}
+section .left .l-r .taxi a div img {
+  width: 356px;
+  height: 280px;
+  overflow: hidden;
+  transition: .5s;
+}
+section .left .l-r .taxi a div img:hover {
+  -ms-transform: scale(1.2, 1.2);
+  /* IE 9 */
+  -webkit-transform: scale(1.2, 1.2);
+  /* Safari */
+  transform: scale(1.2, 1.2);
+  /* Standard syntax */
 }
 section .left .l-r .taxi a h2 {
   display: block;
@@ -321,9 +337,24 @@ section .left .l-r .branch a {
   width: 355px;
   margin: 0 auto;
 }
-section .left .l-r .branch a img {
+section .left .l-r .branch a div {
   width: 356px;
   height: 280px;
+  overflow: hidden;
+}
+section .left .l-r .branch a div img {
+  width: 356px;
+  height: 280px;
+  overflow: hidden;
+  transition: .5s;
+}
+section .left .l-r .branch a div img:hover {
+  -ms-transform: scale(1.2, 1.2);
+  /* IE 9 */
+  -webkit-transform: scale(1.2, 1.2);
+  /* Safari */
+  transform: scale(1.2, 1.2);
+  /* Standard syntax */
 }
 section .left .l-r .branch a h2 {
   display: block;
@@ -371,6 +402,27 @@ section .left .l-r .slide .slide-btn .next {
   font-size: 50px;
   color: #fff;
 }
+section .left .l-r .slide .slide-s {
+  position: relative;
+  z-index: 2;
+  top: 290px;
+  left: 150px;
+  width: 100px;
+  height: 10px;
+  display: inline-block;
+}
+section .left .l-r .slide .slide-s span {
+  text-indent: -999px;
+  font-size: 0;
+  display: inline-block;
+  width: 9px;
+  height: 3px;
+  background-color: #fff;
+}
+section .left .l-r .slide .slide-s span:first-child {
+  width: 15px;
+  background-color: #666;
+}
 section .left .l-r .slide .view {
   overflow: hidden;
   width: 356px;
@@ -379,18 +431,6 @@ section .left .l-r .slide .view {
 }
 section .left .l-r .slide .view ul li {
   display: inline-block;
-}
-section .left .l-r .slide .view ul li.on span {
-  background-color: #666;
-}
-section .left .l-r .slide .view ul li span {
-  position: relative;
-  top: 295px;
-  left: 140px;
-  display: inline-block;
-  width: 9px;
-  height: 3px;
-  background-color: #fff;
 }
 section .left .l-r .slide .view ul li div {
   background-color: #ddd;
@@ -448,6 +488,7 @@ section .right .career a {
 section .right .career a img {
   width: 356px;
   height: 280px;
+  overflow: hidden;
 }
 section .right .career a h2 {
   display: block;
@@ -483,9 +524,24 @@ section .right .service a {
   margin: 0 auto;
   padding-top: 65px;
 }
-section .right .service a img {
+section .right .service a div {
   width: 356px;
   height: 280px;
+  overflow: hidden;
+}
+section .right .service a div img {
+  width: 356px;
+  height: 280px;
+  overflow: hidden;
+  transition: .5s;
+}
+section .right .service a div img:hover {
+  -ms-transform: scale(1.2, 1.2);
+  /* IE 9 */
+  -webkit-transform: scale(1.2, 1.2);
+  /* Safari */
+  transform: scale(1.2, 1.2);
+  /* Standard syntax */
 }
 section .right .service a h2 {
   display: block;
@@ -512,18 +568,29 @@ section .right .story {
   margin: 0;
   height: 555px;
 }
-section .right .story a img {
-  position: relative;
+section .right .story a div {
   width: 429px;
   height: 555px;
+}
+section .right .story a div img {
+  position: relative;
   top: -468px;
 }
-section .right .story a img:first-child {
+section .right .story a div img:first-child {
   width: 308px;
   height: 468px;
   left: 45px;
   top: 40px;
   z-index: 1;
+  transition: .5s;
+}
+section .right .story a div img:first-child:hover {
+  -ms-transform: scale(1.2, 1.2);
+  /* IE 9 */
+  -webkit-transform: scale(1.2, 1.2);
+  /* Safari */
+  transform: scale(1.2, 1.2);
+  /* Standard syntax */
 }
 section .right .notice {
   top: 30px;

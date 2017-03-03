@@ -1,31 +1,146 @@
 @import "common.css";
-header {
-  height: 130px;
-  background-color: #000;
-}
-header > a {
+.fl {
   float: left;
-  display: block;
-  width: 100px;
-  height: 60px;
 }
-header > a h1 {
-  color: #fff;
-  font-size: 14px;
-}
-header nav {
-  height: 60px;
+.fr {
   float: right;
 }
-header nav li {
+.pr {
+  position: relative;
+}
+.pa {
+  position: absolute;
+}
+header {
+  background-color: #99CCCC;
+  height: 70px;
+}
+header > div {
+  width: 1200px;
+  margin: 0 auto;
+}
+header > div .logo img {
+  width: 170px;
+  height: 40px;
+  padding: 15px 20px;
+}
+header > div .logo h1 {
+  font-size: 0;
+  text-indent: -999px;
+}
+header > div .sns {
+  margin: 20px 20px;
+}
+header > div .sns ul li {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
   display: inline-block;
 }
-header nav li a {
-  line-height: 60px;
-  color: #fff;
-  font-size: 24px;
+header > div .search input {
+  width: 120px;
+  height: 22px;
+  margin: 20px;
+  padding: 5px 28px 5px 5px;
+  border: 1px solid #fff;
+  border-radius: 3px;
 }
-header .section-slide-controller {
-  height: 70px;
-  background-color: #aaa;
+header > div .search i {
+  position: relative;
+  right: 50px;
+}
+header > div .search i::before {
+  content: "옹";
+}
+nav {
+  height: 60px;
+  background-color: #fff;
+}
+nav ul {
+  height: 60px;
+  width: 1200px;
+  margin: 0 auto;
+  display: block;
+}
+nav ul li {
+  position: relative;
+  left: -200px;
+  display: inline-block;
+}
+nav ul li a {
+  line-height: 60px;
+  padding: 0 20px;
+  font-size: 14px;
+  color: #99CCCC;
+  font-weight: 600;
+}
+nav ul li a:hover {
+  color: #0099CC;
+}
+nav ul li.on {
+  background-color: #0099CC;
+}
+nav ul li.on a {
+  color: #fff;
+}
+section .slide {
+  width: 100%;
+  height: 600px;
+  background-color: powderblue;
+}
+section .artists {
+  width: 1200px;
+  margin: 0 auto;
+}
+section .artists h2 {
+  padding: 20px 0;
+  font-size: 24px;
+  color: #99cccc;
+  font-weight: 700;
+  display: inline-block;
+  vertical-align: middle;
+}
+section .artists span {
+  font-size: 14px;
+}
+section .artists i {
+  vertical-align: middle;
+  display: inline-block;
+  width: 956px;
+  height: 14px;
+  background-image: url('../image/pattern.png');
+}
+section .artists > div {
+  width: 1200px;
+  height: 200px;
+  background-color: #99CCCC;
+  margin-bottom: 40px;
+}
+section .artists > div .artists-view {
+  width: 1110px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+section .releases {
+  width: 1200px;
+  margin: 0 auto;
+}
+section .releases h2 {
+  padding: 20px 0;
+  font-size: 24px;
+  color: #99cccc;
+  font-weight: 700;
+  display: inline-block;
+  vertical-align: middle;
+}
+section .releases span {
+  font-size: 14px;
+}
+section .releases i {
+  vertical-align: middle;
+  display: inline-block;
+  width: 943px;
+  height: 14px;
+  background-image: url('../image/pattern.png');
 }
