@@ -1,9 +1,10 @@
 // option
 .fl{float: left;}
 .fr{float: right;}
+.fcr{clear:right;}
 .pr{position: relative;}
 .pa{position: absolute;}
-
+.pf{position: fixed;}
 
 header{
   background-color: #99CCCC;
@@ -89,6 +90,37 @@ section{
     width:100%;
     height:600px;
     background-color: powderblue;
+    .slide-btn{
+      width: 100%;
+      z-index:1;
+      top:410px;
+      a{
+        font-size:0;
+        text-indent: -999px;
+        display: block;
+        width:40px;
+        height:40px;
+      }
+      .next{
+        background-image: url('../image/slide-right.png');
+        right:20px;
+      }
+      .prev{
+        background-image: url('../image/slide-prev.png');
+        left:20px;
+      }
+    }
+    .slide-view{
+      ul{
+        li{
+          position: relative;
+          display: none;
+          &:first-child{
+            display: block;
+          }
+        }
+      }
+    }
   }
   .artists{
     width:1200px;
@@ -117,12 +149,46 @@ section{
       background-color: #99CCCC;
       margin-bottom:40px;
       .artists-btn{
+        width:1200px;
+        a{
+          top:70px;
+          display:block;
+          width:25px;
+          height:50px;
+          background-size:25px 50px;
+          background-repeat: no-repeat;
+          font-size:0;
+          text-indent:-999px;
+        }
+        .artists-btn-next{
+          right:8px;
+          background-image: url('../image/next.png');
+        }
+        .artists-btn-prev{
+          left:8px;
+          background-image: url('../image/prev.png');
+        }
       }
       .artists-view{
-        width:1110px;
+        width:1105px;
         height:200px;
         margin:0 auto;
-        background-color: #fff;
+        background-color: #99CCCC;;
+        overflow: hidden;
+        ul{
+          li{
+            display: inline-block;
+            margin-left:-6px;
+              div{
+               width: 370px;
+               height:200px;
+               overflow: hidden;
+               background-size:370px;
+               background-position: center;
+               .hover;
+            }
+          }
+        }
       }
     }
   }
@@ -147,7 +213,87 @@ section{
       height:14px;
       background-image: url('../image/pattern.png');
     }
+    .releases-super-grid{
+      width:1210px;
+      overflow: hidden;
+      height:auto;
+      ul{
+        li{
+          display:inline-block;
+          width:200px;
+          height:200px;
+          overflow: hidden;
+          background-color:#ddd;
+          outline: 1px solid gray;
+          margin-left:-5px;
+          padding:0;
+          vertical-align: middle;
+          div{
+            span{
+              display: block;
+              width: 200px;
+              height:40px;
+              line-height:36px;
+              font-weight: bold;
+              text-align: center;
+              font-size:30px;
+              color:#fff;
+              padding-top:60px;
+              background-color: #99cccc;
+            }
+            img{
+              width:200px;
+              height:200px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
-footer{}
+footer{
+  height:114px;
+  width:100%;
+  background-color:#ddd;
+  position: fixed;
+  bottom:0;
+  div{
+  bottom: 125px;
+  right:11px;
+  width:40px;
+  height:40px;
+  background-color: #99CCCC;
+  background-image: url('../image/flying-top.png');
+    a{
+      font-size: 0;
+      text-indent: -999px;
+    }
+  }
+  ul{
+    width:1200px;
+    height:114px;
+    margin: 0 auto;
+    padding-top:40px;
+    li{
+      width:360px;
+      display: inline-block;
+      text-align: right;
+      &:first-child{
+      }
+      span{
+        margin-top:10px;
+        color:#fff;
+        font-size:14px;
+        font-weight: 600;
+        display: inline-block;
+        line-height:20px;
+      }
+      i{
+        color: #fff;
+        font-size:12px;
+      }
+
+    }
+  }
+}

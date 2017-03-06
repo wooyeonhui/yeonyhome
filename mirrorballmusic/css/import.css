@@ -5,11 +5,17 @@
 .fr {
   float: right;
 }
+.fcr {
+  clear: right;
+}
 .pr {
   position: relative;
 }
 .pa {
   position: absolute;
+}
+.pf {
+  position: fixed;
 }
 header {
   background-color: #99CCCC;
@@ -88,6 +94,33 @@ section .slide {
   height: 600px;
   background-color: powderblue;
 }
+section .slide .slide-btn {
+  width: 100%;
+  z-index: 1;
+  top: 410px;
+}
+section .slide .slide-btn a {
+  font-size: 0;
+  text-indent: -999px;
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+section .slide .slide-btn .next {
+  background-image: url('../image/slide-right.png');
+  right: 20px;
+}
+section .slide .slide-btn .prev {
+  background-image: url('../image/slide-prev.png');
+  left: 20px;
+}
+section .slide .slide-view ul li {
+  position: relative;
+  display: none;
+}
+section .slide .slide-view ul li:first-child {
+  display: block;
+}
 section .artists {
   width: 1200px;
   margin: 0 auto;
@@ -116,11 +149,68 @@ section .artists > div {
   background-color: #99CCCC;
   margin-bottom: 40px;
 }
+section .artists > div .artists-btn {
+  width: 1200px;
+}
+section .artists > div .artists-btn a {
+  top: 70px;
+  display: block;
+  width: 25px;
+  height: 50px;
+  background-size: 25px 50px;
+  background-repeat: no-repeat;
+  font-size: 0;
+  text-indent: -999px;
+}
+section .artists > div .artists-btn .artists-btn-next {
+  right: 8px;
+  background-image: url('../image/next.png');
+}
+section .artists > div .artists-btn .artists-btn-prev {
+  left: 8px;
+  background-image: url('../image/prev.png');
+}
 section .artists > div .artists-view {
-  width: 1110px;
+  width: 1105px;
   height: 200px;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: #99CCCC;
+  overflow: hidden;
+}
+section .artists > div .artists-view ul li {
+  display: inline-block;
+  margin-left: -6px;
+}
+section .artists > div .artists-view ul li div {
+  width: 370px;
+  height: 200px;
+  overflow: hidden;
+  background-size: 370px;
+  background-position: center;
+  transition: .4s;
+}
+section .artists > div .artists-view ul li div h2 {
+  font-size: 0;
+}
+section .artists > div .artists-view ul li div cite {
+  font-size: 0;
+}
+section .artists > div .artists-view ul li div a {
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+section .artists > div .artists-view ul li div a:hover {
+  display: table-cell;
+  vertical-align: middle;
+  color: #0099CC;
+  font-size: 22px;
+}
+section .artists > div .artists-view ul li div a:hover background-color:rgba(255,255,255,0.5) h2 {
+  font-weight: 700;
+}
+section .artists > div .artists-view ul li div a:hover cite {
+  font-weight: 400;
 }
 section .releases {
   width: 1200px;
@@ -143,4 +233,78 @@ section .releases i {
   width: 943px;
   height: 14px;
   background-image: url('../image/pattern.png');
+}
+section .releases .releases-super-grid {
+  width: 1210px;
+  overflow: hidden;
+  height: auto;
+}
+section .releases .releases-super-grid ul li {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  background-color: #ddd;
+  outline: 1px solid gray;
+  margin-left: -5px;
+  padding: 0;
+  vertical-align: middle;
+}
+section .releases .releases-super-grid ul li div span {
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 36px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  padding-top: 60px;
+  background-color: #99cccc;
+}
+section .releases .releases-super-grid ul li div img {
+  width: 200px;
+  height: 200px;
+}
+footer {
+  height: 114px;
+  width: 100%;
+  background-color: #ddd;
+  position: fixed;
+  bottom: 0;
+}
+footer div {
+  bottom: 125px;
+  right: 11px;
+  width: 40px;
+  height: 40px;
+  background-color: #99CCCC;
+  background-image: url('../image/flying-top.png');
+}
+footer div a {
+  font-size: 0;
+  text-indent: -999px;
+}
+footer ul {
+  width: 1200px;
+  height: 114px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+footer ul li {
+  width: 360px;
+  display: inline-block;
+  text-align: right;
+}
+footer ul li span {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+  line-height: 20px;
+}
+footer ul li i {
+  color: #fff;
+  font-size: 12px;
 }

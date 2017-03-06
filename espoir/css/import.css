@@ -1,31 +1,101 @@
 @import "common.css";
-header {
-  height: 130px;
-  background-color: #000;
+.pa {
+  position: absolute;
 }
-header > a {
+.pr {
+  position: relative;
+}
+.fl {
   float: left;
-  display: block;
-  width: 100px;
-  height: 60px;
 }
-header > a h1 {
-  color: #fff;
-  font-size: 14px;
-}
-header nav {
-  height: 60px;
+.fr {
   float: right;
 }
-header nav li {
-  display: inline-block;
+header {
+  height: 60px;
+  background-color: #000;
 }
-header nav li a {
+header nav {
+  width: 1424px;
+  margin: 0 auto;
+}
+header nav div {
+  float: left;
+  padding-left: 30px;
+}
+header nav div h1 {
+  font-size: 14px;
+  text-indent: -999px;
+}
+header nav ul {
+  float: right;
+  padding-left: 20px;
+}
+header nav ul li {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+}
+header nav ul li a {
+  font-size: 18px;
+  font-weight: bold;
   line-height: 60px;
   color: #fff;
-  font-size: 24px;
+  letter-spacing: -1.5px;
 }
-header .section-slide-controller {
-  height: 70px;
-  background-color: #aaa;
+header nav ul li div {
+  display: none;
+}
+header nav .nav-icon li a {
+  font-size: 0;
+  text-indent: -999px;
+  background-repeat: no-repeat;
+}
+header .bg-grid {
+  width: 1423px;
+  height: 3000px;
+  margin: 0 auto;
+  top: 0;
+  z-index: -1;
+}
+header .bg-grid .col {
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  margin-left: -6px;
+  outline: 1px solid #ddd;
+}
+#main {
+  width: 1424px;
+  margin: 0 auto;
+}
+#main .main-slide {
+  background-color: powderblue;
+  margin-left: -8px;
+  height: 900px;
+}
+#main .main-slide h2 {
+  font-size: 0;
+  text-indent: -999px;
+}
+#main .main-slide .main-slide-view {
+  background-color: #fff;
+  height: 600px;
+  top: 80px;
+}
+#main .main-slide .main-slide-view ul li {
+  display: none;
+}
+#main .main-slide .main-slide-view ul li:first-child {
+  display: block;
+}
+#main .main-slide .main-slide-view ul li:first-child img {
+  width: 100%;
+}
+#shop {
+  display: none;
+}
+footer {
+  width: 1424px;
+  margin: 0 auto;
 }
