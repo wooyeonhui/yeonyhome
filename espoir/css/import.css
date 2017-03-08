@@ -53,7 +53,7 @@ header nav .nav-icon li a {
 }
 header .bg-grid {
   width: 1423px;
-  height: 3000px;
+  height: 5000px;
   margin: 0 auto;
   top: 0;
   z-index: -1;
@@ -70,7 +70,6 @@ header .bg-grid .col {
   margin: 0 auto;
 }
 #main .main-slide {
-  background-color: powderblue;
   margin-left: -8px;
   height: 900px;
 }
@@ -84,18 +83,211 @@ header .bg-grid .col {
   top: 80px;
 }
 #main .main-slide .main-slide-view ul li {
+  position: relative;
   display: none;
+}
+#main .main-slide .main-slide-view ul li div {
+  height: 605px;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#main .main-slide .main-slide-view ul li img {
+  width: 100%;
 }
 #main .main-slide .main-slide-view ul li:first-child {
   display: block;
 }
-#main .main-slide .main-slide-view ul li:first-child img {
+#main .main-slide .main-scroll {
+  height: 130px;
+  width: 18px;
+  margin: 0 auto;
+  text-align: center;
+}
+#main .main-slide .main-scroll img {
+  display: inline-block;
+  padding-bottom: 10px;
+}
+#main .main-slide .main-scroll img:first-child {
+  position: relative;
+  height: 90px;
+  top: 140px;
+  left: 5px;
+  border-left: 2px solid #666;
+}
+#main .bnboard div {
+  display: none;
+}
+#main .bnboard div.on {
+  display: block;
+  height: 495px;
+  overflow: hidden;
+}
+#main .bnboard div.on ul {
+  padding-top: 40px;
+}
+#main .bnboard div.on ul li {
+  display: inline-block;
+  width: 25%;
+  margin-left: -6px;
+}
+#main .bnboard div.on ul li img {
+  width: 320px;
+  height: 320px;
+  margin-top: 10px;
+}
+#main .bnboard div.on ul li div {
+  padding: 0 20px;
+  display: block;
+  width: 320px;
+  height: 123px;
+}
+#main .bnboard div.on ul li div i {
+  display: block;
+  vertical-align: top;
+  height: 60px;
+  color: #7f7f7f;
+}
+#main .bnboard div.on ul li div p {
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  color: #7f7f7f;
   width: 100%;
+  line-height: 30px;
+  display: block;
+  font-size: 14px;
+}
+#main .bnboard div.on ul li div p::before {
+  content: "Ψ";
+}
+#main .bnboard div.on ul li div a {
+  color: #e55a28;
+  font-size: 14px;
+  line-height: 29px;
+  height: 29px;
+  display: inline-block;
+  border-bottom: 2px solid #f36;
+}
+#main .bnboard .bnb-btn {
+  display: block;
+  width: 289px;
+  height: 49px;
+  margin: 0 auto;
+  text-align: center;
+}
+#main .bnboard .bnb-btn a {
+  display: inline-block;
+  padding-right: 30px;
+}
+#main .bnboard .bnb-btn a span {
+  font-size: 0;
+  text-indent: -999px;
+}
+#main .newcol {
+  padding: 60px 4px;
+  text-align: right;
+}
+#main .newcol img {
+  vertical-align: middle;
+}
+#main .newcol img:first-child {
+  padding-right: 80px;
+}
+#main .algrid {
+  width: 100%;
+  margin-left: -6px;
+  height: 773px;
+}
+#main .algrid > div {
+  display: inline-block;
+}
+#main .algrid .algrid-left {
+  width: 49.9%;
+  height: 100%;
+}
+#main .algrid .algrid-left ul {
+  margin-left: -5px;
+}
+#main .algrid .algrid-left ul li {
+  position: relative;
+  display: inline-block;
+  margin: 10px 5px;
+}
+#main .algrid .algrid-left ul li img {
+  position: absolute;
+  z-index: 1;
+  top: 120px;
+  left: 100px;
+}
+#main .algrid .algrid-left ul li img:first-child {
+  top: -10px;
+  left: 0;
+  position: relative;
+}
+#main .algrid .algrid-left ul li.gradation div {
+  width: 337px;
+  height: 372px;
+  position: relative;
+  background: linear-gradient(270deg, #18f0b8, #e6376f, #e87f19);
+}
+#main .algrid .algrid-right {
+  left: 3px;
+  width: 49.5%;
+  height: 100%;
+  text-align: center;
+}
+#main .algrid .algrid-right > img {
+  display: inline-block;
+  width: 287px;
+  height: 35px;
+}
+#main .algrid .algrid-right .algrid-right-s {
+  margin-top: 40px;
+  width: 100%;
+  height: 345px;
+}
+#main .algrid .algrid-right .algrid-right-m div {
+  vertical-align: top;
+  width: 345px;
+  height: 348px;
+  display: inline-block;
+  outline: 1px solid gray;
+  margin-left: 7px;
+}
+#main .algrid .algrid-right .algrid-right-m div:first-child {
+  margin-left: 0;
+  text-align: right;
+}
+#main .algrid .algrid-right .algrid-right-m div:first-child img {
+  padding: 60px 0 20px;
+}
+#main .algrid .algrid-right .algrid-right-m div:first-child span {
+  display: block;
+  line-height: 24px;
+  font-size: 14px;
+  color: #282829;
+}
+#main .social-review {
+  height: 1035px;
+  width: 100%;
+  padding-top: 80px;
+  margin-left: -5px;
+  background-color: powderblue;
+}
+#main .ending {
+  height: 147px;
+  margin: 97px 2px 97px -6px;
+  padding: 40px;
+  background-color: #ddd;
 }
 #shop {
   display: none;
 }
 footer {
-  width: 1424px;
+  width: 100%;
+  height: 267px;
+  position: absolute;
+  top: 4833px;
   margin: 0 auto;
+  background-color: #282829;
 }
