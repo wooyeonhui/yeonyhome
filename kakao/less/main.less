@@ -1,16 +1,8 @@
 // option
-.pf{
-  position:fixed;
-}
-.pr{
-  position: relative;
-}
-.pa{
-  position: absolute;
-}
-body,hr{
-  background-color: #fafafa;
-}
+.pf{position:fixed;}
+.pr{position: relative;}
+.pa{position: absolute;}
+body,hr{background-color: #fafafa;}
 nav{
   border-right:1px solid #ccc;
   width: 319px;
@@ -46,24 +38,49 @@ nav{
       display: block;
       width:300px;
       height:35px;
-      font-size:0;
-      text-indent:-999px;
       background-image: url('../image/kakao-logo.png');
       background-repeat:no-repeat;
       background-position: center;
+      a{
+        font-size:0;
+        text-indent:-999px;
+      }
     }
     ul{
-    padding-top:40px;
+    padding-top:30px;
       li{
         margin: 0 auto;
         width:107px;
         height:40px;
         text-align: center;
         a{
-          font-size:13px;
-          font-weight: bold;
-          letter-spacing:-1px;
-          color: #444;
+          font-size:0;
+          text-indent:-999px;
+          display: block;
+          width: 100px;
+          height:40px;
+          background-image: url('../image/gnb-img.gif');
+          &:hover{
+            background-position-y:-100px;
+          }
+        }
+        .gnb-1{
+          background-position: 12px -50px;
+        }
+        .gnb-2{
+          background-position: -120px -50px;
+        }
+        .gnb-3{
+          background-position: -240px -50px;
+        }
+        .gnb-4{
+          background-position: -360px -50px;
+        }
+        .gnb-5{
+          background-position: -480px -50px;
+        }
+        .gnb-6{
+          background-position: -600px -50px;
         }
       }
     }
@@ -111,7 +128,7 @@ nav{
   }
 }
 section{
-  width:100%;
+  margin-left: 319px;
   height:100%;
   background-color:#fff;
   margin-left:319px;
@@ -432,7 +449,7 @@ section{
        div{
          width:429px;
          height:555px;
-         img{         
+         img{
          position: relative;
          top:-468px;
          &:first-child{

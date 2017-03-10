@@ -49,14 +49,16 @@ nav .gnb h1 {
   display: block;
   width: 300px;
   height: 35px;
-  font-size: 0;
-  text-indent: -999px;
   background-image: url('../image/kakao-logo.png');
   background-repeat: no-repeat;
   background-position: center;
 }
+nav .gnb h1 a {
+  font-size: 0;
+  text-indent: -999px;
+}
 nav .gnb ul {
-  padding-top: 40px;
+  padding-top: 30px;
 }
 nav .gnb ul li {
   margin: 0 auto;
@@ -65,10 +67,33 @@ nav .gnb ul li {
   text-align: center;
 }
 nav .gnb ul li a {
-  font-size: 13px;
-  font-weight: bold;
-  letter-spacing: -1px;
-  color: #444;
+  font-size: 0;
+  text-indent: -999px;
+  display: block;
+  width: 100px;
+  height: 40px;
+  background-image: url('../image/gnb-img.gif');
+}
+nav .gnb ul li a:hover {
+  background-position-y: -100px;
+}
+nav .gnb ul li .gnb-1 {
+  background-position: 12px -50px;
+}
+nav .gnb ul li .gnb-2 {
+  background-position: -120px -50px;
+}
+nav .gnb ul li .gnb-3 {
+  background-position: -240px -50px;
+}
+nav .gnb ul li .gnb-4 {
+  background-position: -360px -50px;
+}
+nav .gnb ul li .gnb-5 {
+  background-position: -480px -50px;
+}
+nav .gnb ul li .gnb-6 {
+  background-position: -600px -50px;
 }
 nav footer {
   margin: 0 auto;
@@ -112,7 +137,6 @@ nav footer select {
   color: #444;
 }
 section {
-  width: 100%;
   height: 100%;
   background-color: #fff;
   margin-left: 319px;
