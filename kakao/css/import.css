@@ -656,7 +656,20 @@ section .right .notice ul li a::before {
   top: 0;
   background-color: rgba(0, 0, 0, 0);
 }
+#careers nav:hover {
+  background-color: #fff;
+}
+#careers nav:hover header a {
+  color: #000;
+}
+#careers nav:hover a {
+  color: #000;
+}
+#careers nav:hover ul li a {
+  color: #000;
+}
 #careers nav header {
+  padding: 0 10px;
   float: left;
   line-height: 59px;
 }
@@ -681,22 +694,39 @@ section .right .notice ul li a::before {
   font-weight: bold;
   color: #fff;
 }
+#careers nav ul li a:hover {
+  text-decoration: underline;
+}
 #careers nav > a {
+  padding: 0 10px;
   float: right;
   line-height: 59px;
   color: #fff;
 }
 #careers section {
   width: 100%;
+  height: auto;
   margin: 0;
 }
 #careers section .main-slide {
   background-color: powderblue;
   width: 100%;
-  height: 600px;
+  height: 720px;
 }
-#careers section .main-slide .slide-btn {
+#careers section .main-slide .slide-btn a {
   position: absolute;
+  z-index: 2;
+  top: 300px;
+  left: 1800px;
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  font-size: 0;
+  text-indent: -999px;
+  background-image: url('../image/icon.png');
+}
+#careers section .main-slide .slide-btn a:first-child {
+  left: 50px;
 }
 #careers section .main-slide .slide-view ul li {
   display: inline-block;
@@ -704,7 +734,34 @@ section .right .notice ul li a::before {
 #careers section .main-slide .slide-view ul li > div {
   display: none;
 }
-#careers section .main-slide .slide-view ul li > div span {
+#careers section .main-slide .slide-view ul li > div a {
+  z-index: 2;
+  position: absolute;
+  display: block;
+  top: 300px;
+  left: 150px;
+  width: 497px;
+  height: 207px;
+}
+#careers section .main-slide .slide-view ul li > div a > span {
+  font-size: 15px;
+  color: #fff;
+}
+#careers section .main-slide .slide-view ul li > div a strong {
+  display: block;
+  color: #fff;
+  padding: 12px 0 35px;
+  font-size: 42px;
+  letter-spacing: -1px;
+  line-height: 60px;
+}
+#careers section .main-slide .slide-view ul li > div a i {
+  color: #ffdc00;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: bold;
+}
+#careers section .main-slide .slide-view ul li > div > span {
   position: absolute;
 }
 #careers section .main-slide .slide-view ul li > div img {
@@ -713,4 +770,107 @@ section .right .notice ul li a::before {
 }
 #careers section .main-slide .slide-view ul li:first-child > div {
   display: block;
+}
+#careers section .inside {
+  width: 100%;
+  height: 400px;
+}
+#careers section .inside ul li {
+  width: 33.33%;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+  margin-left: -5px;
+}
+#careers section .inside ul li a {
+  width: 100%;
+  background-color: #FFD6B5;
+  display: block;
+  text-align: center;
+}
+#careers section .inside ul li a > span {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  z-index: 1;
+}
+#careers section .inside ul li a img {
+  display: inline-block;
+  width: 400px;
+}
+#careers section .inside ul li a > div {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  background-color: #fff;
+}
+#careers section .inside ul li a > div strong {
+  position: absolute;
+  top: 140px;
+  left: 280px;
+  font-size: 100px;
+}
+#careers section .inside ul li a > div > span {
+  position: absolute;
+  display: block;
+  top: 120px;
+  width: 200px;
+  left: 240px;
+  height: 100px;
+  text-align: center;
+  padding: 0 20px;
+  line-height: 47px;
+  font-size: 30px;
+}
+#careers section .inside ul li:last-child a div {
+  background-color: #ddd;
+}
+#careers footer {
+  width: 100%;
+  height: 60px;
+  padding: 15px 0;
+}
+#careers footer strong {
+  padding-left: 20px;
+  color: #1e1e1e;
+  font-size: 11px;
+  line-height: 20px;
+  font-weight: bold;
+}
+#careers footer span {
+  color: #1e1e1e;
+  font-size: 11px;
+  line-height: 20px;
+}
+#careers footer i {
+  padding-left: 20px;
+  color: #333;
+  font-size: 11px;
+  line-height: 20px;
+}
+@media screen and (max-width: 768px) {
+  body,
+  html {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  nav {
+    width: 100%;
+    height: 60px;
+  }
+  nav div {
+    display: none;
+  }
+  nav footer {
+    display: none;
+  }
+  section {
+    margin: 0;
+  }
+  section article {
+    display: block;
+  }
 }
