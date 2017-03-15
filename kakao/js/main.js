@@ -58,6 +58,17 @@
                 movement('-100%',0,idx);
              })
 
+             $('.gnb h1').click(function(){
+
+               $(this).find('a').children()attr('image/responsive/close.png')
+               console.log('뭐냐 씨발?:'+$(this).find('a').children().attr('src'));
+               $(this).siblings().css({
+                 top:'-156px'
+               })
+
+             })
 
 
+
+        //끝
          })

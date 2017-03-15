@@ -1,71 +1,31 @@
 $(function(){
 
-  var idx = 0;
-  function motion(start,end,i){
+  var idx =0;
+  var bidx =1;
+  //-----bg-fade-in&out
+  $('.bg-slide-view li').eq(0).addClass('on');
+  $('.bg-slide-btn a').eq(1).addClass('on');
 
-  }
 
-  function motion(start,end,i){
-    $('.bg-slide-view li').eq(i).addClass('on').find('div').css({
-      left:start,
-      'display':'block'
-    }).parent().siblings().removeClass();
-
-    if(idx == $('.bg-slide-view li').length){
+  function gofade(){
+    console.log('idx 1 :'+idx);
+    $('.bg-slide-view li').eq(idx).fadeIn(500).animate({},3000).fadeOut(500)
+    idx ++
+    if(idx ==  $('.bg-slide-view li').length){
       idx = 0
-      motion('100%',0,idx)
-    }else if (idx < 0) {
-      idx = $('.bg-slide-view li').length-1;
-      motion('-100%',0,idx)
     }
   }
-
-  var inv = setInterval(function(){
-    motion(0,'-100%',idx);
-    idx ++
-    motion('100%',0,idx);
+  var inter = setInterval(function(){
+    gofade()
+    console.log('idx 2 :'+idx);
   },4000)
 
-  $('bg-slide-btn a').click(function(){
-    var bidx = $('.bg-slide-view li.on').index();
-    // 0번 빼기
-    idx = $(this).index()-1;
-
-    if(bidx < idx){
-      motion(0,'-100%',bidx);
-      motion('100%',0,idx);
-    }else if(bidx > idx){
-      motion(0,'100%',bidx);
-      motion('-100%',0,idx);
-    }else if (idx == -1) {
-      $(this).toggle(function(){
-
-        clearInterval(inv)
-
-      },function(){
-        inv = setInterval(function(){
-          motion(0,'-100%',idx);
-          idx ++
-          motion('100%',0,idx);
-        },3000)
-      })
-    }
-    return false;
-
+  //----hover-effect
+  $('.hover-ef li').mouseenter(function(){
+    $(this).children('a').find('div').fadeIn(1000)
+  }).mouseleave(function(){
+    $(this).children('a').find('div').fadeOut(1000)
   })
- //slide end
- //hover ef
-console.log("@@@@")
-  $('.hover-ef li a').mouseenter(function(){
-    var idx = $(this).parent().index();
-    $(this).find('div').fadeIn("slow");
-  }).mouseleave({
-    $(this).find('div').fadeOut("slow");
-  })
-
-
-
-
 
 
   //끝

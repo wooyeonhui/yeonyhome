@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/main.js"></script>
   <link rel="stylesheet" href="css/import.css">
   <title>mirrorballmusic</title>
 </head>
@@ -78,16 +81,22 @@
         <div class="slide-view">
             <ul>
               <li>
-                <div><img src="http://mirrorballmusic.co.kr/wp-content/uploads/2017/01/banner_pia.png" alt=""></div>
+                <div>
+                  <img src="image/main/main-slide-1.jpg" alt="">
+                  <img src="image/main/txt.png" alt="">
+                </div>
               </li>
               <li>
-                <div><img src="http://mirrorballmusic.co.kr/wp-content/uploads/2015/08/banner1.gif" alt=""></div>
+                <div>
+                  <img src="image/main/main-slide-2.jpg" alt="">
+                  <img src="image/main/txt1.png" alt="">
+                </div>
               </li>
               <li>
-                <div><img src="http://mirrorballmusic.co.kr/wp-content/uploads/2017/01/banner_lee.png" alt=""></div>
-              </li>
-              <li>
-                <div><img src="" alt="http://mirrorballmusic.co.kr/wp-content/uploads/2017/01/banner_seen.png"></div>
+                <div>
+                  <img src="image/main/main-slide-3.png" alt="">
+                  <img src="image/main/txt.png" alt="">
+                </div>
               </li>
             </ul>
         </div>
@@ -154,6 +163,7 @@
                </li>
 
 
+
              </ul>
 
      </div>
@@ -167,7 +177,7 @@
     <i></i>
 
     <div class="releases-super-grid">
-        <ul>
+        <ul class="super-grid-1">
             <li>
               <div>
                 <span>
@@ -220,21 +230,6 @@
             </li>
             <li>
               <div>
-                <span>
-                   2017 <br />
-                      0306
-                </span>
-              </div>
-            </li>
-            <li>
-              <div>
-                <img src="http://mirrorballmusic.co.kr/wp-content/uploads/2017/03/cover-5-300x300.jpg" alt="톨사이즈말고 그란데">
-                <h2></h2>
-                <cite></cite>
-              </div>
-            </li>
-            <li>
-              <div>
                 <img src="http://mirrorballmusic.co.kr/wp-content/uploads/2017/03/cover-8-300x300.jpg" alt="떠나지마요">
                 <h2></h2>
                 <cite></cite>
@@ -268,56 +263,8 @@
                 <cite></cite>
               </div>
             </li>
-            <li>
-              <div>
-                <span>
-                   2017 <br />
-                      0306
-                </span>
-              </div>
-            </li>
-            <li>
-              <div>
-                <img src="http://mirrorballmusic.co.kr/wp-content/uploads/2017/03/cover-5-300x300.jpg" alt="톨사이즈말고 그란데">
-                <h2></h2>
-                <cite></cite>
-              </div>
-            </li>
-            <li>
-              <div>
-                <img src="http://mirrorballmusic.co.kr/wp-content/uploads/2017/03/cover-8-300x300.jpg" alt="떠나지마요">
-                <h2></h2>
-                <cite></cite>
-              </div>
-            </li>
-            <li>
-              <div>
-                <img src="http://mirrorballmusic.co.kr/wp-content/uploads/2017/03/cover-7-300x300.jpg" alt="피곤한 주말 선선한 밤">
-                <h2></h2>
-                <cite></cite>
-              </div>
-            </li>
-            <li>
-              <div>
-                <img src="http://mirrorballmusic.co.kr/wp-content/uploads/2017/03/cover-6-300x300.jpg" alt="sleepwalking">
-                <h2></h2>
-                <cite></cite>
-              </div>
-            </li>
-            <li>
-              <div>
-                <img src="http://mirrorballmusic.co.kr/wp-content/uploads/2017/03/cover-1-300x300.jpg" alt="">
-                <h2></h2>
-                <cite></cite>
-              </div>
-            </li>
-            <li>
-              <div>
-                <img src="http://mirrorballmusic.co.kr/wp-content/uploads/2017/03/cover-4-300x300.jpg" alt="">
-                <h2></h2>
-                <cite></cite>
-              </div>
-            </li>
+        </ul>
+        <ul class="super-grid-2">
             <li>
               <div>
                 <span>
@@ -370,6 +317,43 @@
             </li>
             <li>
               <div>
+                <img src="http://mirrorballmusic.co.kr/wp-content/uploads/2017/03/cover-8-300x300.jpg" alt="떠나지마요">
+                <h2></h2>
+                <cite></cite>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="http://mirrorballmusic.co.kr/wp-content/uploads/2017/03/cover-7-300x300.jpg" alt="피곤한 주말 선선한 밤">
+                <h2></h2>
+                <cite></cite>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="http://mirrorballmusic.co.kr/wp-content/uploads/2017/03/cover-6-300x300.jpg" alt="sleepwalking">
+                <h2></h2>
+                <cite></cite>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="http://mirrorballmusic.co.kr/wp-content/uploads/2017/03/cover-1-300x300.jpg" alt="">
+                <h2></h2>
+                <cite></cite>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="http://mirrorballmusic.co.kr/wp-content/uploads/2017/03/cover-4-300x300.jpg" alt="">
+                <h2></h2>
+                <cite></cite>
+              </div>
+            </li>
+        </ul>
+        <ul class="super-grid-3">
+            <li>
+              <div>
                 <span>
                    2017 <br />
                       0306
@@ -418,7 +402,135 @@
                 <cite></cite>
               </div>
             </li>
-      </ul>
+            <li>
+              <div>
+                <img src="http://mirrorballmusic.co.kr/wp-content/uploads/2017/03/cover-8-300x300.jpg" alt="떠나지마요">
+                <h2></h2>
+                <cite></cite>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="http://mirrorballmusic.co.kr/wp-content/uploads/2017/03/cover-7-300x300.jpg" alt="피곤한 주말 선선한 밤">
+                <h2></h2>
+                <cite></cite>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="http://mirrorballmusic.co.kr/wp-content/uploads/2017/03/cover-6-300x300.jpg" alt="sleepwalking">
+                <h2></h2>
+                <cite></cite>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="http://mirrorballmusic.co.kr/wp-content/uploads/2017/03/cover-1-300x300.jpg" alt="">
+                <h2></h2>
+                <cite></cite>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="http://mirrorballmusic.co.kr/wp-content/uploads/2017/03/cover-4-300x300.jpg" alt="">
+                <h2></h2>
+                <cite></cite>
+              </div>
+            </li>
+        </ul>
+        <ul class="super-grid-4">
+          <li>
+            <div>
+              <span>
+                 2017 <br />
+                    0306
+              </span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="http://mirrorballmusic.co.kr/wp-content/uploads/2017/03/cover-5-300x300.jpg" alt="톨사이즈말고 그란데">
+              <h2></h2>
+              <cite></cite>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="http://mirrorballmusic.co.kr/wp-content/uploads/2017/03/cover-8-300x300.jpg" alt="떠나지마요">
+              <h2></h2>
+              <cite></cite>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="http://mirrorballmusic.co.kr/wp-content/uploads/2017/03/cover-7-300x300.jpg" alt="피곤한 주말 선선한 밤">
+              <h2></h2>
+              <cite></cite>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="http://mirrorballmusic.co.kr/wp-content/uploads/2017/03/cover-6-300x300.jpg" alt="sleepwalking">
+              <h2></h2>
+              <cite></cite>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="http://mirrorballmusic.co.kr/wp-content/uploads/2017/03/cover-1-300x300.jpg" alt="">
+              <h2></h2>
+              <cite></cite>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="http://mirrorballmusic.co.kr/wp-content/uploads/2017/03/cover-4-300x300.jpg" alt="">
+              <h2></h2>
+              <cite></cite>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="http://mirrorballmusic.co.kr/wp-content/uploads/2017/03/cover-8-300x300.jpg" alt="떠나지마요">
+              <h2></h2>
+              <cite></cite>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="http://mirrorballmusic.co.kr/wp-content/uploads/2017/03/cover-7-300x300.jpg" alt="피곤한 주말 선선한 밤">
+              <h2></h2>
+              <cite></cite>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="http://mirrorballmusic.co.kr/wp-content/uploads/2017/03/cover-6-300x300.jpg" alt="sleepwalking">
+              <h2></h2>
+              <cite></cite>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="http://mirrorballmusic.co.kr/wp-content/uploads/2017/03/cover-1-300x300.jpg" alt="">
+              <h2></h2>
+              <cite></cite>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="http://mirrorballmusic.co.kr/wp-content/uploads/2017/03/cover-4-300x300.jpg" alt="">
+              <h2></h2>
+              <cite></cite>
+            </div>
+          </li>
+        </ul>
+        <div class="more-view">
+          <a href="#none">
+            <span>더보기</span>
+            <img src="image/main/more.gif" alt="">
+          </a>
+        </div>
     </div>
 
   </div>

@@ -53,7 +53,7 @@ header nav .nav-icon li a {
 }
 header .bg-grid {
   width: 1423px;
-  height: 5000px;
+  height: auto;
   margin: 0 auto;
   top: 0;
   z-index: -1;
@@ -69,6 +69,24 @@ header .bg-grid .col {
   width: 1424px;
   margin: 0 auto;
 }
+#main .main-controller {
+  top: 400px;
+  left: 20px;
+  width: 100%;
+}
+#main .main-controller a {
+  font-weight: bold;
+  color: #222;
+  position: absolute;
+  font-size: 20px;
+  letter-spacing: -2px;
+}
+#main .main-controller a:last-child {
+  right: 20px;
+}
+#main .main-controller a i {
+  margin: 0 10px;
+}
 #main .main-slide {
   margin-left: -8px;
   height: 900px;
@@ -77,14 +95,27 @@ header .bg-grid .col {
   font-size: 0;
   text-indent: -999px;
 }
+#main .main-slide .main-slide-btn {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  top: 380px;
+}
+#main .main-slide .main-slide-btn a {
+  position: absolute;
+}
+#main .main-slide .main-slide-btn .main-slide-next {
+  right: 0;
+}
 #main .main-slide .main-slide-view {
   background-color: #fff;
   height: 600px;
   top: 80px;
+  overflow: hidden;
 }
 #main .main-slide .main-slide-view ul li {
   position: relative;
-  display: none;
+  display: inline-block;
 }
 #main .main-slide .main-slide-view ul li div {
   height: 605px;
@@ -268,7 +299,7 @@ header .bg-grid .col {
   color: #282829;
 }
 #main .social-review {
-  height: 1035px;
+  height: auto;
   width: 100%;
   padding-top: 80px;
   margin-left: -5px;
@@ -304,10 +335,13 @@ header .bg-grid .col {
   text-indent: -999px;
 }
 #main .social-review ul {
+  display: none;
   width: 100%;
-  height: 762px;
+  height: auto;
   margin-top: 75px;
-  overflow: hidden;
+}
+#main .social-review ul:first-child {
+  display: block;
 }
 #main .social-review ul li {
   display: inline-block;
@@ -464,11 +498,8 @@ header .bg-grid .col {
   display: none;
 }
 footer {
-  position: relative;
   width: 100%;
   height: 267px;
-  position: absolute;
-  top: 4833px;
   margin: 0 auto;
   background-color: #282829;
 }

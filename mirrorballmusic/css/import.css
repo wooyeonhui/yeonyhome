@@ -114,12 +114,25 @@ section .slide .slide-btn .prev {
   background-image: url('../image/slide-prev.png');
   left: 20px;
 }
+section .slide .slide-view {
+  height: 600px;
+  overflow: hidden;
+}
 section .slide .slide-view ul li {
+  position: absolute;
+  display: inline-block;
+}
+section .slide .slide-view ul li div {
   position: relative;
   display: none;
 }
-section .slide .slide-view ul li:first-child {
+section .slide .slide-view ul li.on div {
   display: block;
+}
+section .slide .slide-view ul li.on div img:last-child {
+  position: absolute;
+  top: 150px;
+  left: 150px;
 }
 section .artists {
   width: 1200px;
@@ -236,8 +249,26 @@ section .releases i {
 }
 section .releases .releases-super-grid {
   width: 1210px;
-  overflow: hidden;
+  margin-bottom: 174px;
   height: auto;
+}
+section .releases .releases-super-grid > div {
+  width: 100%;
+  text-align: center;
+}
+section .releases .releases-super-grid > div a {
+  width: 50px;
+  height: 50px;
+  font-weight: bold;
+}
+section .releases .releases-super-grid > div a span {
+  font-size: 20px;
+  color: #999;
+  line-height: 40px;
+  display: block;
+}
+section .releases .releases-super-grid ul {
+  display: none;
 }
 section .releases .releases-super-grid ul li {
   display: inline-block;
@@ -265,6 +296,9 @@ section .releases .releases-super-grid ul li div span {
 section .releases .releases-super-grid ul li div img {
   width: 200px;
   height: 200px;
+}
+section .releases .releases-super-grid .super-grid-1 {
+  display: block;
 }
 footer {
   height: 114px;

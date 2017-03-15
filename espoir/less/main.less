@@ -48,7 +48,7 @@ header{
   }
   .bg-grid{
     width:1423px;
-    height:5000px;
+    height:auto;
     margin: 0 auto;
     top:0;
     z-index:-1;
@@ -65,22 +65,53 @@ header{
 #main{
   width: 1424px;
   margin:0 auto;
-  .main-controller{}
+  .main-controller{
+    top:400px;
+    left:20px;
+    width: 100%;
+    a{
+      font-weight: bold;
+      color: #222;
+      position: absolute;
+      font-size:20px;
+      letter-spacing:-2px;
+      &:last-child{
+        right:20px;
+      }
+      i{
+        margin:0 10px;
+      }
+    }
+  }
   .main-slide{
+    margin-left:-8px;
+    height:900px;
     h2{
       font-size: 0;
       text-indent:-999px;
     }
-    margin-left:-8px;
-    height:900px;
+    .main-slide-btn{
+      position: absolute;
+      width:100%;
+      z-index:1;
+      top:380px;
+      a{
+        position: absolute;
+      }
+      .main-slide-prev{}
+      .main-slide-next{
+        right:0;
+      }
+    }
     .main-slide-view{
       background-color:#fff;
       height:600px;
       top:80px;
+      overflow: hidden;
       ul{
         li{
           position: relative;
-          display: none;
+          display: inline-block;
           div{
             height:605px;
             position: absolute;
@@ -272,7 +303,7 @@ header{
     }
   }
   .social-review{
-    height: 1035px;
+    height: auto;
     width: 100%;
     padding-top:80px;
     margin-left:-5px;
@@ -308,10 +339,13 @@ header{
       }
     }
     ul{
+      display: none;
       width: 100%;
-      height:762px;
+      height:auto;
       margin-top: 75px;
-      overflow: hidden;
+      &:first-child{
+        display: block;
+      }
       li{
         display: inline-block;
         width:24.5%;
@@ -471,11 +505,8 @@ header{
 }
 
 footer{
-  position: relative;
   width: 100%;
   height: 267px;
-  position:absolute;
-  top:4833px;
   margin:0 auto;
   background-color: #282829;
   div{

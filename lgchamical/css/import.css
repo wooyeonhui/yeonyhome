@@ -16,9 +16,6 @@ header {
   height: 46px;
   background-color: #000;
 }
-header .top-pop-up {
-  display: none;
-}
 header .logo {
   margin-left: 401px;
   display: inline-block;
@@ -72,7 +69,13 @@ header nav a {
   font-size: 0;
   text-indent: -999px;
 }
+#main {
+  width: 100%;
+  height: 100%;
+}
 #main .bg-slide {
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
   z-index: -1;
@@ -86,6 +89,8 @@ header nav a {
   bottom: 300px;
 }
 #main .bg-slide .bg-slide-btn a {
+  position: relative;
+  z-index: 2;
   width: 40px;
   height: 30px;
   font-size: 0;
@@ -99,11 +104,30 @@ header nav a {
   right: 400px;
   background-image: url('../image/slide-pause.png');
 }
-#main .bg-slide .bg-slide-view ul li {
-  display: none;
+#main .bg-slide .bg-slide-view {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
-#main .bg-slide .bg-slide-view ul li:first-child {
-  display: block;
+#main .bg-slide .bg-slide-view ul {
+  width: 100%;
+  height: 100%;
+}
+#main .bg-slide .bg-slide-view ul li {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#main .bg-slide .bg-slide-view ul li display:none > div {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+#main .bg-slide .bg-slide-view ul li display:none > div img {
+  width: 100%;
+  height: 100%;
 }
 #main .hover-ef ul li {
   display: inline-block;
@@ -117,21 +141,14 @@ header nav a {
   font-size: 0;
   text-indent: -999px;
 }
-#main .hover-ef ul li a div {
-  transition: 1s;
+#main .hover-ef ul li a > div {
   display: none;
-}
-#main .hover-ef ul li a div img {
-  transition: 1s;
-}
-#main .hover-ef ul li a:hover div {
-  position: relative;
-  display: block;
-  left: 950px;
-  top: -300px;
+  position: absolute;
+  left: 1050px;
+  top: -200px;
 }
 footer {
-  width: 100%;
+  width: 60%;
   height: 96px;
   padding: 0 20%;
   padding-top: 28px;
@@ -160,9 +177,11 @@ footer ul li a {
 footer div {
   top: -65px;
   left: 950px;
+  width: 400px;
 }
 footer div img {
   vertical-align: middle;
+  display: inline-block;
 }
 footer div a {
   margin-left: 10px;
