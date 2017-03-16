@@ -116,6 +116,8 @@ section .slide .slide-btn .prev {
 }
 section .slide .slide-view {
   height: 600px;
+  width: 100%;
+  position: relative;
   overflow: hidden;
 }
 section .slide .slide-view ul li {
@@ -129,9 +131,14 @@ section .slide .slide-view ul li div {
 section .slide .slide-view ul li.on div {
   display: block;
 }
+section .slide .slide-view ul li.on div img {
+  width: 100%;
+}
 section .slide .slide-view ul li.on div img:last-child {
+  width: auto;
+  z-index: 2;
   position: absolute;
-  top: 150px;
+  top: 100px;
   left: 150px;
 }
 section .artists {
@@ -275,9 +282,7 @@ section .releases .releases-super-grid ul li {
   width: 200px;
   height: 200px;
   overflow: hidden;
-  background-color: #ddd;
-  outline: 1px solid gray;
-  margin-left: -5px;
+  margin-left: -6px;
   padding: 0;
   vertical-align: middle;
 }

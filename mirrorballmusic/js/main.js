@@ -38,7 +38,7 @@ $(function(){
   })
 
   var inter = setInterval(function(){
-    $('.slide-btn .next').tigger('click')
+    $('.slide-btn .next').trigger('click')
   },4000);
 
   $('.slide .slide-view li').mouseenter(function(){
@@ -52,7 +52,15 @@ $(function(){
   //super-grid-more
   var moreview =1;
   $('.releases-super-grid div.more-view').click(function(){
-    $('.releases-super-grid>ul').eq(idx).css('display','block')
+
+    $('.releases-super-grid>ul').eq(idx).css('display','block').find('div').css({
+      'width':0,
+      'height':0
+    }).stop().animate({
+      'width':'200px',
+      'height':'200px'
+    })
+
     moreview ++;
     if(moreview > 4){
       moreview == 3;

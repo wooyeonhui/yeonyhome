@@ -6,10 +6,10 @@
 
 
 header{
+  position: relative;
   padding-top:14px;
   height:46px;
   background-color: #000;
-
   .logo{
     margin-left:401px;
     display: inline-block;
@@ -64,10 +64,83 @@ header{
       font-size:0;
       text-indent:-999px;
     }
+    .menu-wrapper{
+      display: none;
+      position: fixed;
+      width:100%;
+      height:auto;
+      overflow:hidden;
+      left:0;
+      bottom:0;
+      z-index: 2;
+      background-color: #000;
+      >div{
+        padding-top: 135px;
+        width: 1100px;
+        height: auto;
+        margin: 0 auto;
+        >a{
+        display: block;
+        width:66px;
+        height:66px;
+        float: right;
+        position: relative;
+        top:-80px;
+        left:-40px;
+        img{
+          float: right;
+        }
+         }
+        >div{
+          width: 1020px;
+          margin: 0 auto;
+          cite{
+            display: block;
+            width: 170px;
+            height: 43px;
+            font-size: 0;
+            img{
+            }
+          }
+          div{
+            background-color: #fff;
+            padding:30px 40px 22px;
+            margin-bottom: 50px;
+            height:auto;
+            dl{
+              display:inline-block;
+              margin-bottom:43px;
+              margin-left:6px;
+              width: 140px;
+              vertical-align: top;
+              dt{
+                color: #a50034;
+                font-size: 18px;
+                padding-bottom: 16px;
+                font-weight: bold;
+              }
+              dd{
+                a{
+                  line-height:40px;
+                  font-size:14px;
+                  color: #333;
+                }
+                border-top:1px solid #ccc;
+               &:nth-child(2){
+                 border: 0;
+               }
+              }
+            }
+          }
+          ul{}
+        }
+      }
+    }
   }
 }
 
 #main{
+  overflow:hidden;
   width: 100%;
   height: 100%;
   .bg-slide{
@@ -82,21 +155,22 @@ header{
       left:900px;
       z-index:2;
       width:400px;
+      height:40px;
       a{
         position: relative;
         z-index: 2;
         width: 40px;
-        height:30px;
+        height:40px;
         font-size:0;
         text-indent:-999px;
         display: inline-block;
         background-image: url('../image/slide-select.png');
         background-repeat: no-repeat;
-        &:first-child{
-          position: relative;
-          right:400px;
-          background-image: url('../image/slide-pause.png');
-        }
+      }
+      .sp{
+        position: relative;
+        right:400px;
+        background-image: url('../image/slide-pause.png');
       }
       bottom:300px;
     }
@@ -122,7 +196,7 @@ header{
               width: 100%;
               height: 100%;
             }
-          }        
+          }
         }
       }
     }

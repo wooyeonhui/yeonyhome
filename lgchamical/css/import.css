@@ -12,6 +12,7 @@
   position: absolute;
 }
 header {
+  position: relative;
   padding-top: 14px;
   height: 46px;
   background-color: #000;
@@ -69,7 +70,77 @@ header nav a {
   font-size: 0;
   text-indent: -999px;
 }
+header nav .menu-wrapper {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: #000;
+}
+header nav .menu-wrapper > div {
+  padding-top: 135px;
+  width: 1100px;
+  height: auto;
+  margin: 0 auto;
+}
+header nav .menu-wrapper > div > a {
+  display: block;
+  width: 66px;
+  height: 66px;
+  float: right;
+  position: relative;
+  top: -80px;
+  left: -40px;
+}
+header nav .menu-wrapper > div > a img {
+  float: right;
+}
+header nav .menu-wrapper > div > div {
+  width: 1020px;
+  margin: 0 auto;
+}
+header nav .menu-wrapper > div > div cite {
+  display: block;
+  width: 170px;
+  height: 43px;
+  font-size: 0;
+}
+header nav .menu-wrapper > div > div div {
+  background-color: #fff;
+  padding: 30px 40px 22px;
+  margin-bottom: 50px;
+  height: auto;
+}
+header nav .menu-wrapper > div > div div dl {
+  display: inline-block;
+  margin-bottom: 43px;
+  margin-left: 6px;
+  width: 140px;
+  vertical-align: top;
+}
+header nav .menu-wrapper > div > div div dl dt {
+  color: #a50034;
+  font-size: 18px;
+  padding-bottom: 16px;
+  font-weight: bold;
+}
+header nav .menu-wrapper > div > div div dl dd {
+  border-top: 1px solid #ccc;
+}
+header nav .menu-wrapper > div > div div dl dd a {
+  line-height: 40px;
+  font-size: 14px;
+  color: #333;
+}
+header nav .menu-wrapper > div > div div dl dd:nth-child(2) {
+  border: 0;
+}
 #main {
+  overflow: hidden;
   width: 100%;
   height: 100%;
 }
@@ -86,20 +157,21 @@ header nav a {
   left: 900px;
   z-index: 2;
   width: 400px;
+  height: 40px;
   bottom: 300px;
 }
 #main .bg-slide .bg-slide-btn a {
   position: relative;
   z-index: 2;
   width: 40px;
-  height: 30px;
+  height: 40px;
   font-size: 0;
   text-indent: -999px;
   display: inline-block;
   background-image: url('../image/slide-select.png');
   background-repeat: no-repeat;
 }
-#main .bg-slide .bg-slide-btn a:first-child {
+#main .bg-slide .bg-slide-btn .sp {
   position: relative;
   right: 400px;
   background-image: url('../image/slide-pause.png');
