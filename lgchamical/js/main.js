@@ -17,6 +17,8 @@ $(function(){
   $('header nav .menu-wrapper > div >a').click(function(){
     $('header nav > div').css('display','none')
   })
+
+  
   //--bg-fade
   var  gofade = function(){
 
@@ -45,9 +47,9 @@ $(function(){
 
   //----hover-effect
   $('.hover-ef li').mouseenter(function(){
-    $(this).children('a').find('div').fadeIn(700)
+    $(this).children('a').find('div').stop().fadeIn(700)
   }).mouseleave(function(){
-    $(this).children('a').find('div').fadeOut(700)
+    $(this).children('a').find('div').stop().fadeOut(700)
   })
   //---
   function start(){

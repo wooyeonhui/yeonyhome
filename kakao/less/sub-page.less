@@ -221,3 +221,177 @@
     }
   }
 }
+#sub-page{
+  header{
+    height:84px;
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 2;
+    background-color: rgba(255,255,255,.5);
+    border-bottom: 2px solid #F9E000;
+    nav{
+      width: 960px;
+      margin:0 auto;
+      ul{
+        float: left;
+        li{
+          display: inline-block;
+          padding-top: 40px;
+          width:73px;
+          a{
+            border-left: 1px solid #ddd;
+            display: block;
+            font-size: 14px;
+            line-height:14px;
+            color: #666;
+            padding-left:10px;
+          }
+        }
+      }
+      .right{
+        float: right;
+        height:84px;
+        >a{
+          float: right;
+          display: block;
+          height: 18px;
+          margin-top: 7px;
+          padding: 1px 5px;
+          border:1px solid #ddd;
+          border-radius:2px 2px;
+          font-size: 12px;
+          color: #aaa;
+          line-height: 18px;
+        }
+        select{
+          position: relative;
+          left:50px;
+          width:120px;
+          height: 24px;
+          padding-left:8px;
+          vertical-align: top;
+          margin-top: 35px;
+          font-size: 12px;
+          color: #aaa;
+        }
+      }
+      .logo{
+        float: left;
+        margin-left: 10px;
+        a{
+          vertical-align:middle;
+          padding-top:30px;
+          display: inline-block;
+          h1{
+            font-size: 0;
+            text-indent: -999px;
+          }
+          &:last-child{
+            width: 75px;
+            margin-left: 46px;
+          strong{
+            font-size: 16px;
+            font-weight: bold;
+            color: #444;
+            line-height:30px;
+          }
+          }
+        }
+      }
+    }
+  }
+  section{
+    width: 960px;
+    margin:84px auto;
+    padding-top: 14px;
+    .header{
+      border:1px solid #ddd;
+      border-radius:2px 2px;
+      width:960px;
+      height: 62px;
+      margin-bottom: 14px;
+      h2{
+        float:left;
+        margin: 9px 0 0 10px;
+        font-size: 0;
+        text-indent: -999px;
+        display: block;
+        width: 188px;
+        height:44px;
+        background-image: url('../image/sub-page/taxi-common.png');
+      }
+      a{
+        display: block;
+        width: 138px;
+        height: 42px;
+        background-image:url('../image/sub-page/sec-btns.png');
+        background-position: 0 0 ;
+        float: right;
+        margin:10px 6px 0 0;
+        &:last-child{
+          background-position:-144px 0 ;
+        }
+      }
+    }
+    .intro{
+      width:958px;
+      height: 469px;
+      background-image: url('../image/sub-page/taxi-intro.png');
+      cite{
+        font-size:0;
+        text-indent: -999px;
+      }
+    }
+    .intro-1{
+      width: 420px;
+      height: 236px;
+      padding:272px 0 0 538px;
+      position: relative;
+      top:-200px;
+      background-color:#fff;
+      background-image: url(../image/sub-page/taxi-simple.png);
+      background-repeat: no-repeat;
+      background-position:40px 20px;
+      .sub-text();
+    }
+    .every{
+      position: relative;
+      top:-200px;
+      background-color:rgb(247,247,247);
+      width: 788px;
+      height: 225px;
+      padding:132px 0 0 170px;
+      i{
+        position: relative;
+        top:-300px;
+        right: 50px;
+        float: right;
+        display: block;
+        width: 255px;
+        height: 427px;
+        background-image: url('../image/sub-page/taxi-anywhere.png');
+        background-repeat: no-repeat;
+      }
+      .sub-text();
+    }
+    .every1{
+      width:387px;
+      height: 289px;
+      padding:199px 0 0 571px;
+      position: relative;
+      top:-200px;
+      span{
+        display: inline-block;
+        width: 305px; height: 30px;
+      }
+      strong{
+        width:100px;
+        height:20px;
+        display: inline-block;
+        float:right;
+      }
+      .sub-text();
+    }
+  }
+}
